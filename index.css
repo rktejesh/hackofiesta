@@ -3,6 +3,7 @@
 
 :root {
   --color-primary: #000;
+  --color-primary2: rgba(0, 0, 0, 0.829);
   --color-primary-alt: #ddd;
   --color-secondary: #fff;
   --font-family-primary: "Sora", sans-serif;
@@ -79,27 +80,29 @@ body {
     45deg,
     var(--color-secondary),
     var(--color-secondary) 25%,
-    var(--color-primary) 25%,
-    var(--color-primary) 50%,
+    var(--color-primary2) 25%,
+    var(--color-primary2) 50%,
     var(--color-secondary) 50%,
     var(--color-secondary) 75%,
-    var(--color-primary) 75%,
-    var(--color-primary) 100%
+    var(--color-primary2) 75%,
+    var(--color-primary2) 100%
   );
   background-repeat: repeat;
   background-size: 10px 10px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 120px;
+  /* text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000; */
+    color: #fff;
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
   font-family: "Steelfish Rg", "helvetica neue", helvetica, arial, sans-serif;
   font-weight: 800;
   -webkit-font-smoothing: antialiased;
-  -webkit-animation: stripes 4s linear infinite;
-  animation: stripes 4s linear infinite;
-  font-size: 100px;
+  -webkit-animation: stripes 7s linear infinite;
+  animation: stripes 7s linear infinite;
+  font-size: 60px;
   height: 25%;
 }
 @-webkit-keyframes stripes {
@@ -121,7 +124,7 @@ body {
   box-sizing: border-box;
   position: relative;
 }
-.hof-main{
+.hof-main {
   height: 100%;
 }
 .hof {
@@ -161,18 +164,28 @@ body {
     background-position: 100% -100%;
   }
 }
-.version{
+.version {
   position: absolute;
-  top:3vh;
+  top: 3vh;
   font-weight: 600;
 }
-.img-container{
-  height: 60%;
+.img-container {
+  height: 80%;
   display: flex;
   justify-content: center;
   
 }
-.img-container img{
+.img-container img {
   height: 100%;
   max-height: 70vh;
+}
+.name-overlay{
+  position: absolute;
+  color: #ADA78E;
+  top: 4%;
+  font-family: "Righteous", serif;
+  letter-spacing: 3px;
+  font-size: 50px;
+  font-weight: bold;
+  padding-left: 3%;
 }
