@@ -4,8 +4,9 @@
 :root {
   --color-primary: #000;
   --color-primary2: rgba(0, 0, 0, 0.829);
-  --color-primary-alt: #ddd;
-  --color-secondary: #fff;
+  --color-primary-alt: #064663;
+  --color-secondary: #F5F5F5;
+  --color-secondary2: #0e131dee;
   --font-family-primary: "Sora", sans-serif;
   --font-family-secondary: "Inter", "Sora", sans-serif;
   --font-size-h1: 2.5rem;
@@ -23,8 +24,8 @@ body {
     center center,
     var(--color-primary),
     var(--color-primary) 1px,
-    var(--color-secondary) 1px,
-    var(--color-secondary) 100%
+    var(--color-secondary2) 1px,
+    var(--color-secondary2) 100%
   );
   background-size: 8px 8px;
   display: -ms-flexbox;
@@ -76,7 +77,7 @@ body {
 }
 
 .animated-text {
-  background: linear-gradient(
+  /* background: linear-gradient(
     45deg,
     var(--color-secondary),
     var(--color-secondary) 25%,
@@ -90,9 +91,9 @@ body {
   background-repeat: repeat;
   background-size: 10px 10px;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  /* text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
-    -1px -1px 0 #000; */
+  -webkit-text-fill-color: transparent; */
+  text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+    -1px -1px 0 #000;
     color: #fff;
   text-align: center;
   font-weight: bold;
@@ -168,6 +169,7 @@ body {
   position: absolute;
   top: 3vh;
   font-weight: 600;
+  color: white;
 }
 .img-container {
   height: 80%;
