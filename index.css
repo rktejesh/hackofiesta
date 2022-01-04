@@ -70,6 +70,9 @@ body {
   background-position: right 5px, right 30px top 5px, 0 0;
   background-size: 50px 50px, 50px 50px, 100% 64px;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .animated-text {
@@ -158,4 +161,8 @@ body {
   0% {
     background-position: 100% -100%;
   }
+}
+.version{
+  position: absolute;
+  top:3vh;
 }
