@@ -33,13 +33,13 @@ body {
   @instagram: #517fa4;
   @linkedin: #007bb6; */
 
-  -webkit-animation: bg-scrolling-reverse 0.8s infinite;
+  -webkit-animation: bg-scrolling-reverse 2.5s infinite;
 	/* Safari 4+ */
-	 -moz-animation: bg-scrolling-reverse 0.8s infinite;
+	 -moz-animation: bg-scrolling-reverse 2.5s infinite;
 	/* Fx 5+ */
-	 -o-animation: bg-scrolling-reverse 0.8s infinite;
+	 -o-animation: bg-scrolling-reverse 2.5s infinite;
 	/* Opera 12+ */
-	 animation: bg-scrolling-reverse 0.8s infinite;
+	 animation: bg-scrolling-reverse 2.5s infinite;
 	/* IE 10+ */
 	 -webkit-animation-timing-function: linear;
 	 -moz-animation-timing-function: linear;
