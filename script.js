@@ -54,3 +54,16 @@ $('.btn-glitch')
             btnGlitch.stop();
         }
     });
+
+    function linkedin(){
+        window.open("https://www.linkedin.com/company/hackofiesta-iiitl/", "_blank")
+    }
+    function instagram(){
+        window.open("https://www.instagram.com/hackofiesta_iiitl/", "_blank")
+    }
+    function twitter(){
+        window.open("https://twitter.com/hof_iiitl", "_blank")
+    }
+    function facebook(){
+        window.open("https://www.facebook.com/hackofiesta", "_blank")
+    }
