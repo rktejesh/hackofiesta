@@ -1,69 +1,60 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Hackofiesta</title>
-    <link rel="stylesheet" href="./style.css">
-    <meta name="viewport" content="width=device-width" />
-    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="./scss/index.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <title>Hackofiesta</title>
+  <link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width" />
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="./scss/index.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-<style>
-    @font-face {
-        font-family: "fleisch";
-        src: url("../font/Fleisch-Wolf.woff2") format("woff");
-    }
-
-    body {
-        font-family: fleisch;
-        overflow: hidden;
-    }
-</style>
 
 <body>
-    <div class="icon-container">
-        <i class="fa fa-facebook fa-2x icon"></i>
-        <i class="fa fa-twitter fa-2x icon"></i>
-        <i class="fa fa-instagram fa-2x icon"></i>
-        <i class="fa fa-linkedin fa-2x icon"></i>
-    </div>
+  <div class="overall">
     <!-- partial:index.partial.html -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-
+  
     <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1"
-        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-sprite">
-        <defs>
-            <filter id="filter">
-                <feTurbulence type="fractalNoise" baseFrequency="0.000001 0.000001" numOctaves="1" result="warp"
-                    seed="1">
-                </feTurbulence>
-                <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp">
-                </feDisplacementMap>
-            </filter>
-        </defs>
+      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-sprite">
+      <defs>
+        <filter id="filter">
+          <feTurbulence type="fractalNoise" baseFrequency="0.000001 0.000001" numOctaves="1" result="warp" seed="1">
+          </feTurbulence>
+          <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp">
+          </feDisplacementMap>
+        </filter>
+      </defs>
     </svg>
     <div class="container">
-        <div class="glitch" data-text="Hackofiesta">Hackofiesta</div>
-        <div class="glow">Hackofiesta</div>
-        <p class="subtitle">v3.0</p>
+      <div class="glitch" data-text="Hackofiesta">Hackofiesta</div>
+      <div class="glow">Hackofiesta</div>
+      <p class="subtitle">v3.0</p>
     </div>
     <div class="scanlines"></div>
     <div class="square2"></div>
     <div class="body-section">
-
-        <div class="half dark">
-            <div class="btn btn-small btn-clear btn-light btn-glitch">Coming Soon</div>
-        </div>
+  
+      <div class="half dark">
+        <div class="btn btn-small btn-clear btn-light btn-glitch">Coming Soon</div>
+      </div>
     </div>
+    <div class="icon-container">
+      <i class="fa fa-facebook fa-2x icon" onclick=facebook()></i>
+      <i class="fa fa-twitter fa-2x icon" onclick=twitter()></i>
+      <i class="fa fa-instagram fa-2x icon" onclick=instagram()></i>
+      <i class="fa fa-linkedin fa-2x icon" style="margin-right: 10px;" onclick=linkedin()></i>
+    </div>
+  </div>
 
-
-
-    <!-- partial -->
-    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js'></script>
-    <script src="./script.js"></script>
+  <!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js'></script>
+  <script src="./script.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>

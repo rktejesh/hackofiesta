@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "fleisch";
+  src: url("../font/Fleisch-Wolf.woff2") format("woff");
+}
+
+body {
+  overflow: hidden;
+  font-family: "fleisch";
+}
 
 h1 {
   color: white;
@@ -56,6 +65,7 @@ h1 {
   font-size: 10vw;
   -webkit-animation: glitch 5s 5s infinite;
           animation: glitch 5s 5s infinite;
+  font-family: "fleisch";
 }
 
 .glitch::before, .glow::before {
@@ -689,7 +699,7 @@ h1 {
   position: absolute;
   z-index: 2;
   height: 1px;
-  width: 100px;
+  width: 20px;
   border-radius: 10px;
   background-color: #8D068D;
   -webkit-animation-name: square2;
@@ -705,7 +715,7 @@ h1 {
     left: 90%;
     right: 10%;
     bottom: 5%;
-    width: 100px;
+    width: 10px;
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
   }
@@ -713,7 +723,7 @@ h1 {
     left: 5%;
     right: 95%;
     bottom: 5%;
-    width: 500px;
+    width: 300px;
     -webkit-transform: rotateY(3600deg);
             transform: rotateY(3600deg);
   }
@@ -721,7 +731,7 @@ h1 {
     left: 90%;
     right: 10%;
     bottom: 5%;
-    width: 100px;
+    width: 10px;
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
   }
@@ -732,7 +742,7 @@ h1 {
     left: 90%;
     right: 10%;
     bottom: 5%;
-    width: 100px;
+    width: 10px;
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
   }
@@ -740,7 +750,7 @@ h1 {
     left: 5%;
     right: 95%;
     bottom: 5%;
-    width: 500px;
+    width: 300px;
     -webkit-transform: rotateY(3600deg);
             transform: rotateY(3600deg);
   }
@@ -748,7 +758,7 @@ h1 {
     left: 90%;
     right: 10%;
     bottom: 5%;
-    width: 100px;
+    width: 10px;
     -webkit-transform: rotateY(0deg);
             transform: rotateY(0deg);
   }
@@ -964,7 +974,7 @@ body {
 .icon-container {
   position: absolute;
   width: 100%;
-  background-color: #000;
+  background-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -986,6 +996,7 @@ body {
 }
 
 .icon:hover {
+  cursor: pointer;
   -webkit-animation: icon3d 500ms infinite;
           animation: icon3d 500ms infinite;
 }
@@ -1028,5 +1039,50 @@ body {
 
 .btn-container {
   width: 100%;
+}
+
+.overall {
+  overflow: hidden;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .icon-container {
+    padding-top: 25px;
+  }
+  .glitch {
+    font-size: 12vw;
+  }
+  .subtitle {
+    font-size: 3vw;
+  }
+  .btn-glitch {
+    font-size: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .glitch {
+    font-size: 15vw;
+  }
+  .subtitle {
+    font-size: 3vw;
+  }
+  .icon-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 40px;
+  }
+  .btn-glitch {
+    font-size: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 40%;
+  }
+  .icon {
+    font-size: 1.6em !important;
+  }
 }
 /*# sourceMappingURL=index.css.map */
