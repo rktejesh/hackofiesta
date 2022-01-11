@@ -35,11 +35,11 @@ h1 {
 .container {
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 45%;
+  top: 37%;
   left: 50%;
 }
 
-.circle-container {
+.circle-untainer {
   position: absolute;
   top: 20%;
   left: 43%;
@@ -464,11 +464,12 @@ body {
 }
 
 .body-section {
+  position: absolute;
+  top: 57%;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 72%;
+  flex-direction: column;
   
 }
 .body-section .half {
@@ -476,6 +477,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 @keyframes colorshift-red {
@@ -553,6 +555,8 @@ body {
 
 .overall{
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (min-width:600px) and (max-width:1000px) {
@@ -591,4 +595,64 @@ body {
   .icon{
     font-size: 1.6em !important;
   }
+}
+
+h1 {
+  font-size: 7vw;
+
+}
+
+.countdown {
+  display: flex;
+  margin-bottom: 30px;
+  span, h1 {
+    color: white;
+  }
+  
+  .day, .hour, .min, .sec {
+    padding: 1vw 3vw;   
+    text-align: center;
+    .num {
+      display: block;
+      font-size: 4vw;
+      line-height:1.1em;
+      font-family: "fleisch";
+      font-weight: 600;
+    }
+    .word {
+      display: block;
+      font-size: 1.7vw;
+      color: white;
+      font-family: "fleisch";
+      font-weight: 200 !important;
+    }
+  }
+}
+@media screen and (max-width:599px) {
+  .countdown{
+  .day, .hour, .min, .sec {
+    padding: 1vw 3vw;   
+    text-align: center;
+    .num {
+      display: block;
+      font-size: 8vw;
+      line-height:1.5em;
+      font-family: "fleisch";
+      font-weight: 600;
+    }
+    .word {
+      display: block;
+      font-size: 3vw;
+      color: white;
+      font-family: "fleisch";
+      font-weight: 200 !important;
+    }
+  }
+}
+}
+.date{
+  color: rgb(167, 167, 167);
+  font-family: "fleisch";
+  margin-bottom: 35px;
+  font-size: 1.4vw;
 }

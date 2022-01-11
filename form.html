@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-PVQQQTJ');
+		</script>
+			<!-- End Google Tag Manager -->
+
+
+
+    <meta name="title" content="equinox 16 April - 18 April 2021 | Indian Institute
+    of Information Technology,Lucknow">
+    <meta name="description" content="https://equinox.iiitl.ac.in/">
+    <meta name="keywords" content="equinox">
+    <meta name="keywords" content="equinoxiiitl">
+    <meta name="keywords" content="equinox iiitlucknow">
+    <meta name="keywords" content="IIIT Lucknow">
+    <meta name="keywords" content="iiitl lucknow hackathon">
+    <meta name="keywords" content="hackathon equinox iiitl">
+    <meta name="keywords" content="equinox lucknow">
+    <meta name="keywords" content="equinox website">
+    <meta name="keywords" content="lucknow equinox">
+    <meta author="author" content="Harshdeep">
+    <meta author="author" content="Harshit Gupta">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favi/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favi/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favi/favicon-16x16.png">
+    <link rel="manifest" href="./img/favi/site.webmanifest">
+    <link rel="mask-icon" href="./img/favi/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#250a8f">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Equinox || 2021: A Virtual Odyssey</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./scss/form.css">
+
+</head>
+
+<body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PVQQQTJ"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="preloader"> 
+      <div class="loader"></div>
+    </div>
+
+    <div class="section--form">
+        <div class="container">
+            <div class="left">
+
+              <div class="header__img">
+                <img src="./img/equinox_logo.png" alt="">
+              </div>
+
+              <div class="header">
+                <h2 class="animation a1">Welcome</h2>
+                <h4 class="animation a2 enterDetails">Enter details to register
+                </h4>
+              </div>
+              <form class="form" id="registerform" action="/" method="post">
+                <input type="email" name="email" class="form-field animation a3" placeholder="Email Address" required>
+                <input type="Name" name="name" placeholder="Name" class="form-field animation a4" required>
+                <button type="submit" class="animation a6">Register</button>
+              </form>
+            </div>
+            <div class="right"></div>
+          </div>          
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $('#registerform').submit(function(e) {
+    e.preventDefault();
+    $.ajax({
+            type: 'POST',
+            url: 'https://equinox-server.herokuapp.com/',
+            data: $(this).serialize(),
+            beforeSend: function() {
+              $("#preloader").css('display','flex');
+            },
+            complete: function(xhr, textStatus) {
+                $('#preloader').css('display','none');
+                if(xhr.status == 200) window.alert("Success, Join the Discord to stay updated!!");
+                else if(xhr.status == 409) window.alert("This email is already signed up");
+                else if(xhr.status == 400) window.alert("Please fill the form correctly");
+            } 
+    });
+
+  })
+$(window).load(function() { 
+})
+</script>
+</script>
+</html>
