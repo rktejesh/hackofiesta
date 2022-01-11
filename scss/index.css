@@ -49,11 +49,11 @@ h1 {
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  top: 45%;
+  top: 37%;
   left: 50%;
 }
 
-.circle-container {
+.circle-untainer {
   position: absolute;
   top: 20%;
   left: 43%;
@@ -881,6 +881,8 @@ body {
 }
 
 .body-section {
+  position: absolute;
+  top: 57%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -890,8 +892,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
-  top: 72%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .body-section .half {
@@ -905,6 +909,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 30px;
 }
 
 @-webkit-keyframes colorshift-red {
@@ -1043,6 +1048,12 @@ body {
 
 .overall {
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (min-width: 600px) and (max-width: 1000px) {
@@ -1084,5 +1095,69 @@ body {
   .icon {
     font-size: 1.6em !important;
   }
+}
+
+h1 {
+  font-size: 7vw;
+}
+
+.countdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.countdown span, .countdown h1 {
+  color: white;
+}
+
+.countdown .day, .countdown .hour, .countdown .min, .countdown .sec {
+  padding: 1vw 3vw;
+  text-align: center;
+}
+
+.countdown .day .num, .countdown .hour .num, .countdown .min .num, .countdown .sec .num {
+  display: block;
+  font-size: 4vw;
+  line-height: 1.1em;
+  font-family: "fleisch";
+  font-weight: 600;
+}
+
+.countdown .day .word, .countdown .hour .word, .countdown .min .word, .countdown .sec .word {
+  display: block;
+  font-size: 1.7vw;
+  color: white;
+  font-family: "fleisch";
+  font-weight: 200 !important;
+}
+
+@media screen and (max-width: 599px) {
+  .countdown .day, .countdown .hour, .countdown .min, .countdown .sec {
+    padding: 1vw 3vw;
+    text-align: center;
+  }
+  .countdown .day .num, .countdown .hour .num, .countdown .min .num, .countdown .sec .num {
+    display: block;
+    font-size: 8vw;
+    line-height: 1.5em;
+    font-family: "fleisch";
+    font-weight: 600;
+  }
+  .countdown .day .word, .countdown .hour .word, .countdown .min .word, .countdown .sec .word {
+    display: block;
+    font-size: 3vw;
+    color: white;
+    font-family: "fleisch";
+    font-weight: 200 !important;
+  }
+}
+
+.date {
+  color: #a7a7a7;
+  font-family: "fleisch";
+  margin-bottom: 35px;
+  font-size: 1.4vw;
 }
 /*# sourceMappingURL=index.css.map */
