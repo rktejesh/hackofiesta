@@ -3,7 +3,7 @@
   src: url("../font/Fleisch-Wolf.woff2") format('woff');
 }
 body{
-  overflow: hidden;
+  overflow-x: hidden;
   font-family: "fleisch";
 }
 h1 {
@@ -331,6 +331,7 @@ h1 {
   animation-name: square2;
   animation-duration: 8s;
   animation-iteration-count: infinite;
+  top: 100%;
 }
 
 @keyframes square2 {
@@ -358,7 +359,12 @@ h1 {
 }
 
 
-
+.mrg-but1{
+  margin-right: 30px;
+}
+.mrg-but2{
+  margin-left: 30px;
+}
 
 .btn {
   -webkit-transition: all 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -549,6 +555,12 @@ body {
   }
 }
 
+.date{
+  color: rgb(167, 167, 167);
+  font-family: "fleisch";
+  margin-bottom: 35px;
+  font-size: 1.4vw;
+}
 .btn-container{
   width:100%;
 }
@@ -574,6 +586,9 @@ body {
     padding-left: 30px;
     padding-right: 30px;
   }
+  .date{
+    font-size:25px;
+  }
 }
 @media screen and (max-width:599px) {
   .glitch{
@@ -587,13 +602,22 @@ body {
     padding-top: 40px;
   }
   .btn-glitch{
-    font-size: 13px;
-    padding-left: 20px;
-    padding-right: 20px;
+    font-size: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
     width: 40%;
   }
   .icon{
     font-size: 1.6em !important;
+  }
+  .mrg-but1{
+    margin-right: 10px;
+  }
+  .mrg-but2{
+    margin-left: 10px;
+  }
+  .date{
+    font-size: 20px;
   }
 }
 
@@ -650,9 +674,37 @@ h1 {
   }
 }
 }
-.date{
-  color: rgb(167, 167, 167);
-  font-family: "fleisch";
-  margin-bottom: 35px;
-  font-size: 1.4vw;
+.about{
+  width: 100%;
+  background: white;
+  position: absolute;
+  top: 110%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 60px;
+}
+.about-heading{
+  margin-top: 50px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  letter-spacing: 1.5px;
+  font-size:26px;
+  font-weight: 400;
+  padding-bottom: 8px;
+  
+  border-bottom:3px solid #333 ;
+}
+.about-content{
+  margin-top: 40px;
+  font-size: 16px;
+  width: 60%;
+  font-style: normal;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 1.6rem;
+  text-align: center;
+  color: #333;
 }
