@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "Ostrich-Sans";
-  src: url("../font/ostrich-sans.sans-rounded-medium.ttf");
+  src: url("../font/ostrich-sans.sans-bold.ttf");
 }
 
 body {
@@ -1211,8 +1211,7 @@ h1 {
   font-family: "Ostrich-Sans";
   font-style: normal;
   letter-spacing: 1.5px;
-  font-size: 30px;
-  font-weight: 1000;
+  font-size: 35px;
   padding-bottom: 8px;
   border-bottom: 3px solid #333;
 }
