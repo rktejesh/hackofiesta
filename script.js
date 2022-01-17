@@ -135,3 +135,6 @@ const mylittlething_countdown = new countdown({
 const redirectreg=()=>{
     window.open("./form.html","_blank")
 }
+const redirectdis=()=>{
+    window.open("https://discord.gg/gQxAH4YUkG","_blank")
+}
