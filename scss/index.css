@@ -1388,7 +1388,7 @@ h1 {
         align-self: center;
   }
   .ab-img {
-    width: 90%;
+    width: 100%;
     -ms-flex-item-align: center;
         align-self: center;
     display: -webkit-box;
