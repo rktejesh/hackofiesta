@@ -1192,7 +1192,6 @@ h1 {
 
 .about {
   width: 100%;
-  background: white;
   position: absolute;
   top: 110%;
   color: black;
@@ -1206,7 +1205,25 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: white;
+}
+
+.about-sub {
+  width: 100%;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-bottom: 60px;
+  background-color: #eeeeee !important;
+  background: url("./../images/Image.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 700px;
 }
 
 .about-heading {
@@ -1217,19 +1234,36 @@ h1 {
   font-size: 55px;
   padding-bottom: 8px;
   border-bottom: 3px solid #333;
+  margin-left: 50px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 30px;
 }
 
 .about-content {
   margin-top: 40px;
-  font-size: 18px;
-  width: 60%;
+  font-size: 16px;
+  width: 50%;
   font-style: normal;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 300;
   letter-spacing: 0.5px;
   line-height: 1.6rem;
-  text-align: center;
   color: #333;
+  margin-left: 50px;
+}
+
+.theme-sub {
+  background-color: white;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .theme-heading {
@@ -1241,6 +1275,13 @@ h1 {
   font-weight: 400;
   padding-bottom: 8px;
   border-bottom: 3px solid #333;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
 }
 
 *,
@@ -1398,6 +1439,12 @@ h1 {
   .about-content {
     width: 90%;
   }
+  .container-h {
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1600px) {
   .container-h {
     overflow: hidden;
   }

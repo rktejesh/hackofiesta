@@ -683,14 +683,25 @@ h1 {
 }
 .about{
   width: 100%;
-  background: white;
   position: absolute;
   top: 110%;
   color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: white;
+}
+.about-sub{
+  width: 100%;
+  color: black;
+  display: flex;
+  flex-direction: column;
   padding-bottom: 60px;
+  background-color: rgb(238,238,238)!important;
+  background: url("./../images/Image.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 700px;
 }
 .about-heading{
   margin-top: 50px;
@@ -699,20 +710,28 @@ h1 {
   letter-spacing: 1.5px;
   font-size:55px;
   padding-bottom: 8px;
-  
   border-bottom:3px solid #333 ;
+  margin-left: 50px;
+  width: fit-content;
+  margin-bottom: 30px;
 }
 .about-content{
   margin-top: 40px;
-  font-size: 18px;
-  width: 60%;
+  font-size: 16px;
+  width: 50%;
   font-style: normal;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 300;
   letter-spacing: 0.5px;
   line-height: 1.6rem;
-  text-align: center;
   color: #333;
+  margin-left: 50px;
+}
+.theme-sub{
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .theme-heading{
   margin-top: 50px;
@@ -723,6 +742,9 @@ h1 {
   font-weight: 400;
   padding-bottom: 8px;
   border-bottom:3px solid #333 ;
+  width: fit-content;
+  align-self: center;
+  text-align: center;
 }
 *,
 *::after,
@@ -767,7 +789,7 @@ h1 {
   background-position: var(--bX) var(--bY);
   background-size: 40rem auto;
   box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%, .2);
-  // box-shadow: 0 0 3rem .5rem rgba(255, 255, 255, 0.5);
+  // box-shadow: 0 0 3rem .5rem rgba(255, 255, 255, 0.4);
   background-color: #F7F7F7;
   transition: transform .6s 1s;
   display: flex;
@@ -855,6 +877,11 @@ h1 {
   .about-content{
     width: 90%;
   }
+  .container-h{
+    overflow: hidden;
+  }
+}
+@media screen and (min-width:601px) and (max-width:1600px){
   .container-h{
     overflow: hidden;
   }
