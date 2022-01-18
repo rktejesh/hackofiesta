@@ -824,6 +824,19 @@ h1 {
     width: 88%;
     text-align: center;
    }
+   .about-sub{
+    width: 100%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 80px;
+    background-color: rgb(238,238,238)!important;
+    // background: url("./../images/Image.png");
+    // background-repeat: no-repeat;
+    // background-position: right;
+    // background-size: 700px;
+    justify-content: center;
+  }
 }
 .theme-sub{
   background-color: white;

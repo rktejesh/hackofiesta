@@ -1402,6 +1402,22 @@ h1 {
     width: 88%;
     text-align: center;
   }
+  .about-sub {
+    width: 100%;
+    color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 80px;
+    background-color: #eeeeee !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .theme-sub {
