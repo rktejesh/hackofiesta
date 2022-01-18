@@ -135,6 +135,7 @@ const mylittlething_countdown = new countdown({
 const redirectreg=()=>{
     window.open("./form.html","_blank")
 }
+<<<<<<< HEAD
 
 class parallaxTiltEffect {
 
@@ -330,4 +331,8 @@ function themenamed6(){
   t.style.opacity=0;
   let t1=document.getElementById("th-innovation");
       t1.style.opacity="initial";
+=======
+const redirectdis=()=>{
+    window.open("https://discord.gg/gQxAH4YUkG","_blank")
+>>>>>>> e74d57f0dff0d933480260100593fd46eed84974
 }

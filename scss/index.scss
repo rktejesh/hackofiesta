@@ -3,8 +3,13 @@
   src: url("../font/Fleisch-Wolf.woff2") format('woff');
 }
 @font-face {
+<<<<<<< HEAD
   font-family: "Evolve Sans";
   src: url("../font/MADE\ Evolve\ Sans\ Bold\ \(PERSONAL\ USE\).otf") format('otf');
+=======
+  font-family: "Ostrich-Sans";
+  src: url("../font/ostrich-sans.sans-bold.ttf");
+>>>>>>> e74d57f0dff0d933480260100593fd46eed84974
 }
 body{
   overflow-x: hidden;
@@ -576,6 +581,9 @@ body {
 }
 
 @media screen and (min-width:600px) and (max-width:1000px) {
+  .container{
+    overflow: hidden;
+  }
   .icon-container{
     padding-top: 25px;
   }
@@ -691,18 +699,17 @@ h1 {
 }
 .about-heading{
   margin-top: 50px;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family:"Ostrich-Sans";
   font-style: normal;
   letter-spacing: 1.5px;
-  font-size:26px;
-  font-weight: 400;
+  font-size:55px;
   padding-bottom: 8px;
   
   border-bottom:3px solid #333 ;
 }
 .about-content{
   margin-top: 40px;
-  font-size: 16px;
+  font-size: 18px;
   width: 60%;
   font-style: normal;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -712,6 +719,7 @@ h1 {
   text-align: center;
   color: #333;
 }
+<<<<<<< HEAD
 .theme-heading{
   margin-top: 50px;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
@@ -848,4 +856,15 @@ h1 {
     transform: translate(-50%, -50%);
     letter-spacing:10 !important;
     padding: 5px;
+=======
+
+
+@media screen and (max-width:600px){
+  .about-content{
+    width: 90%;
+  }
+  .container{
+    overflow: hidden;
+  }
+>>>>>>> e74d57f0dff0d933480260100593fd46eed84974
 }
