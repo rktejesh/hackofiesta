@@ -3,6 +3,11 @@
   src: url("../font/Fleisch-Wolf.woff2") format("woff");
 }
 
+@font-face {
+  font-family: "Evolve Sans";
+  src: url("../font/MADE Evolve Sans Bold (PERSONAL USE).otf") format("otf");
+}
+
 body {
   overflow-x: hidden;
   font-family: "fleisch";
@@ -45,7 +50,7 @@ h1 {
   }
 }
 
-.container {
+.container-h {
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1223,5 +1228,167 @@ h1 {
   line-height: 1.6rem;
   text-align: center;
   color: #333;
+}
+
+.theme-heading {
+  margin-top: 50px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  letter-spacing: 1.5px;
+  font-size: 26px;
+  font-weight: 400;
+  padding-bottom: 8px;
+  border-bottom: 3px solid #333;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrap {
+  margin: 2rem;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: perspective(100rem);
+          transform: perspective(100rem);
+  cursor: pointer;
+}
+
+.container {
+  --rX: 0;
+  --rY: 0;
+  --bX: 50%;
+  --bY: 80%;
+  width: 250px;
+  height: 250px;
+  border: 1px solid var(--background-color);
+  padding: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-family: sans-serif;
+  position: relative;
+  -webkit-transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+          transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+  background-position: var(--bX) var(--bY);
+  background-size: 40rem auto;
+  -webkit-box-shadow: 0 0 3rem 0.5rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 3rem 0.5rem rgba(0, 0, 0, 0.2);
+  background-color: #F7F7F7;
+  -webkit-transition: -webkit-transform .6s 1s;
+  transition: -webkit-transform .6s 1s;
+  transition: transform .6s 1s;
+  transition: transform .6s 1s, -webkit-transform .6s 1s;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container p {
+  color: black;
+}
+
+.container::before,
+.container::after {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #fff;
+  position: absolute;
+  z-index: 2;
+  opacity: .3;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.container::before {
+  top: 2rem;
+  right: 2rem;
+  border-bottom-width: 0;
+  border-left-width: 0;
+}
+
+.container::after {
+  bottom: 2rem;
+  left: 2rem;
+  border-top-width: 0;
+  border-right-width: 0;
+}
+
+.container--active {
+  -webkit-transition: none;
+  transition: none;
+}
+
+.container p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 2.2rem;
+}
+
+.wrap:hover .container::before,
+.wrap:hover .container::after {
+  width: calc(100% - 4rem);
+  height: calc(100% - 4rem);
+}
+
+.theme__item--details {
+  height: 13rem;
+  width: 13rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2000;
+  background-color: rgba(39, 36, 36, 0.503);
+  opacity: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.theme-name {
+  width: 100%;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.6rem;
+  text-align: center;
+  z-index: 2000;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  letter-spacing: 10 !important;
+  padding: 5px;
 }
 /*# sourceMappingURL=index.css.map */
