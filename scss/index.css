@@ -1388,7 +1388,7 @@ h1 {
         align-self: center;
   }
   .ab-img {
-    width: 80%;
+    width: 90%;
     -ms-flex-item-align: center;
         align-self: center;
     display: -webkit-box;
@@ -1397,7 +1397,7 @@ h1 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 20px;
+    margin-top: 50px;
   }
   .about-content-sub {
     width: 85%;
