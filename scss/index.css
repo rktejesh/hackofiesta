@@ -1218,12 +1218,11 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   background-color: #eeeeee !important;
-  background: url("./../images/Image.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 700px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .about-heading {
@@ -1241,10 +1240,31 @@ h1 {
   margin-bottom: 30px;
 }
 
+.ab-img {
+  width: 50%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  position: relative;
+  bottom: 80px;
+}
+
 .about-content {
   margin-top: 40px;
   font-size: 16px;
-  width: 50%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   font-style: normal;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 300;
@@ -1252,6 +1272,75 @@ h1 {
   line-height: 1.6rem;
   color: #333;
   margin-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-content-sub {
+  width: 50%;
+}
+
+@media screen and (max-width: 1099px) {
+  .about-heading {
+    margin-top: 50px;
+    font-family: 'Ostrich-Sans';
+    font-style: normal;
+    letter-spacing: 1.5px;
+    font-size: 55px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #333;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-bottom: 30px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-left: 0px;
+  }
+  .about-content {
+    margin-top: 40px;
+    font-size: 16px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-style: normal;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 1.6rem;
+    color: #333;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 0px;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .ab-img {
+    width: 60%;
+    -ms-flex-item-align: center;
+        align-self: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 20px;
+  }
+  .about-content-sub {
+    width: 70%;
+    text-align: center;
+  }
 }
 
 .theme-sub {

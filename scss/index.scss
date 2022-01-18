@@ -696,12 +696,13 @@ h1 {
   color: black;
   display: flex;
   flex-direction: column;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   background-color: rgb(238,238,238)!important;
-  background: url("./../images/Image.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 700px;
+  // background: url("./../images/Image.png");
+  // background-repeat: no-repeat;
+  // background-position: right;
+  // background-size: 700px;
+  justify-content: center;
 }
 .about-heading{
   margin-top: 50px;
@@ -715,10 +716,20 @@ h1 {
   width: fit-content;
   margin-bottom: 30px;
 }
+.ab-img{
+  width: 50%;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: flex-start;
+  position: relative;
+  bottom: 80px;
+}
 .about-content{
   margin-top: 40px;
   font-size: 16px;
-  width: 50%;
+  width: fit-content;
   font-style: normal;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 300;
@@ -726,6 +737,52 @@ h1 {
   line-height: 1.6rem;
   color: #333;
   margin-left: 50px;
+  display: flex;
+}
+.about-content-sub{
+ width: 50%;
+}
+@media screen and (max-width:1099px) {
+  .about-heading{
+    margin-top: 50px;
+    font-family:'Ostrich-Sans';
+    font-style: normal;
+    letter-spacing: 1.5px;
+    font-size:55px;
+    padding-bottom: 8px;
+    border-bottom:3px solid #333 ;
+    width: fit-content;
+    margin-bottom: 30px;
+    align-self: center;
+    margin-left: 0px;
+  }
+  .about-content{
+    margin-top: 40px;
+    font-size: 16px;
+    width: fit-content;
+    font-style: normal;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 1.6rem;
+    color: #333;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-left: 0px;
+    align-self: center;
+  }
+  .ab-img{
+    width: 60%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .about-content-sub{
+    width: 70%;
+    text-align: center;
+   }
 }
 .theme-sub{
   background-color: white;
