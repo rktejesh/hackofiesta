@@ -64,7 +64,8 @@ h1 {
   left: 43%;
 }
 
-.glitch, .glow {
+.glitch,
+.glow {
   color: #fff;
   position: relative;
   font-size: 10vw;
@@ -73,7 +74,8 @@ h1 {
   font-family: "fleisch";
 }
 
-.glitch::before, .glow::before {
+.glitch::before,
+.glow::before {
   content: attr(data-text);
   position: absolute;
   left: -2px;
@@ -81,11 +83,12 @@ h1 {
   background: black;
   overflow: hidden;
   top: 0;
-  -webkit-animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
-          animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
+  -webkit-animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
+          animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
 }
 
-.glitch::after, .glow::after {
+.glitch::after,
+.glow::after {
   content: attr(data-text);
   position: absolute;
   left: 2px;
@@ -706,7 +709,7 @@ h1 {
   height: 1px;
   width: 20px;
   border-radius: 10px;
-  background-color: #8D068D;
+  background-color: #8d068d;
   -webkit-animation-name: square2;
           animation-name: square2;
   -webkit-animation-duration: 8s;
@@ -862,7 +865,8 @@ h1 {
   filter: url("#filter");
 }
 
-.btn-glitch.btn-glitch-active::after, .btn-glitch.btn-glitch-active::before {
+.btn-glitch.btn-glitch-active::after,
+.btn-glitch.btn-glitch-active::before {
   content: "";
   width: 1px;
   position: absolute;
@@ -927,65 +931,77 @@ body {
 }
 
 @-webkit-keyframes colorshift-red {
-  0%, 7% {
+  0%,
+  7% {
     background-color: #ff536b;
   }
-  8%, 18% {
+  8%,
+  18% {
     background-color: transparent;
   }
   19% {
     background-color: #ff536b;
     width: 2px;
   }
-  23%, 100% {
+  23%,
+  100% {
     background-color: transparent;
   }
 }
 
 @keyframes colorshift-red {
-  0%, 7% {
+  0%,
+  7% {
     background-color: #ff536b;
   }
-  8%, 18% {
+  8%,
+  18% {
     background-color: transparent;
   }
   19% {
     background-color: #ff536b;
     width: 2px;
   }
-  23%, 100% {
+  23%,
+  100% {
     background-color: transparent;
   }
 }
 
 @-webkit-keyframes colorshift-blue {
-  0%, 7% {
+  0%,
+  7% {
     background-color: #3ffeff;
   }
-  8%, 18% {
+  8%,
+  18% {
     background-color: transparent;
   }
   19% {
     background-color: #3ffeff;
     width: 2px;
   }
-  23%, 100% {
+  23%,
+  100% {
     background-color: transparent;
   }
 }
 
 @keyframes colorshift-blue {
-  0%, 7% {
+  0%,
+  7% {
     background-color: #3ffeff;
   }
-  8%, 18% {
+  8%,
+  18% {
     background-color: transparent;
   }
   19% {
     background-color: #3ffeff;
     width: 2px;
   }
-  23%, 100% {
+  23%,
+  100% {
     background-color: transparent;
   }
 }
@@ -1144,16 +1160,23 @@ h1 {
   margin-bottom: 30px;
 }
 
-.countdown span, .countdown h1 {
+.countdown span,
+.countdown h1 {
   color: white;
 }
 
-.countdown .day, .countdown .hour, .countdown .min, .countdown .sec {
+.countdown .day,
+.countdown .hour,
+.countdown .min,
+.countdown .sec {
   padding: 1vw 3vw;
   text-align: center;
 }
 
-.countdown .day .num, .countdown .hour .num, .countdown .min .num, .countdown .sec .num {
+.countdown .day .num,
+.countdown .hour .num,
+.countdown .min .num,
+.countdown .sec .num {
   display: block;
   font-size: 4vw;
   line-height: 1.1em;
@@ -1161,7 +1184,10 @@ h1 {
   font-weight: 600;
 }
 
-.countdown .day .word, .countdown .hour .word, .countdown .min .word, .countdown .sec .word {
+.countdown .day .word,
+.countdown .hour .word,
+.countdown .min .word,
+.countdown .sec .word {
   display: block;
   font-size: 1.7vw;
   color: white;
@@ -1170,18 +1196,27 @@ h1 {
 }
 
 @media screen and (max-width: 599px) {
-  .countdown .day, .countdown .hour, .countdown .min, .countdown .sec {
+  .countdown .day,
+  .countdown .hour,
+  .countdown .min,
+  .countdown .sec {
     padding: 1vw 3vw;
     text-align: center;
   }
-  .countdown .day .num, .countdown .hour .num, .countdown .min .num, .countdown .sec .num {
+  .countdown .day .num,
+  .countdown .hour .num,
+  .countdown .min .num,
+  .countdown .sec .num {
     display: block;
     font-size: 8vw;
     line-height: 1.5em;
     font-family: "fleisch";
     font-weight: 600;
   }
-  .countdown .day .word, .countdown .hour .word, .countdown .min .word, .countdown .sec .word {
+  .countdown .day .word,
+  .countdown .hour .word,
+  .countdown .min .word,
+  .countdown .sec .word {
     display: block;
     font-size: 3vw;
     color: white;
@@ -1205,7 +1240,6 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: white;
 }
 
 .about-sub {
@@ -1227,13 +1261,13 @@ h1 {
 
 .about-heading {
   margin-top: 50px;
-  font-family: 'Ostrich-Sans';
+  font-family: "Ostrich-Sans";
   font-style: normal;
   letter-spacing: 1.5px;
   font-size: 55px;
   padding-bottom: 8px;
   border-bottom: 3px solid #333;
-  margin-left: 50px;
+  margin-left: 125px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -1275,16 +1309,19 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .about-content-sub {
-  width: 50%;
+  width: 40%;
 }
 
 @media screen and (min-width: 550px) and (max-width: 1099px) {
   .about-heading {
     margin-top: 50px;
-    font-family: 'Ostrich-Sans';
+    font-family: "Ostrich-Sans";
     font-style: normal;
     letter-spacing: 1.5px;
     font-size: 55px;
@@ -1346,7 +1383,7 @@ h1 {
 @media screen and (max-width: 549px) {
   .about-heading {
     margin-top: 50px;
-    font-family: 'Ostrich-Sans';
+    font-family: "Ostrich-Sans";
     font-style: normal;
     letter-spacing: 1.5px;
     font-size: 55px;
@@ -1503,13 +1540,10 @@ h1 {
           transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
   background-position: var(--bX) var(--bY);
   background-size: 40rem auto;
-  -webkit-box-shadow: 0 0 3rem 0.5rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 3rem 0.5rem rgba(0, 0, 0, 0.2);
-  background-color: #F7F7F7;
-  -webkit-transition: -webkit-transform .6s 1s;
-  transition: -webkit-transform .6s 1s;
-  transition: transform .6s 1s;
-  transition: transform .6s 1s, -webkit-transform .6s 1s;
+  -webkit-transition: -webkit-transform 0.6s 1s;
+  transition: -webkit-transform 0.6s 1s;
+  transition: transform 0.6s 1s;
+  transition: transform 0.6s 1s, -webkit-transform 0.6s 1s;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1518,11 +1552,9 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: rgba(255, 255, 255, 0.25);
+  background-color: #3F3F3F;
   -webkit-box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
           box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
@@ -1539,9 +1571,9 @@ h1 {
   border: 1px solid #fff;
   position: absolute;
   z-index: 2;
-  opacity: .3;
-  -webkit-transition: .3s;
-  transition: .3s;
+  opacity: 0.3;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .container::before {
@@ -1592,7 +1624,7 @@ h1 {
 .theme-name {
   width: 100%;
   color: white;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 600;
   font-style: normal;
   font-size: 1.6rem;
@@ -1621,5 +1653,27 @@ h1 {
   .container-h {
     overflow: hidden;
   }
+}
+
+.Prizes-heading {
+  background-color: black;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  font-family: "Ostrich-sans";
+  font-style: normal;
+  letter-spacing: 1.5px;
+  font-size: 50px;
+  font-weight: 400;
+  padding-bottom: 8px;
+  border-bottom: 3px solid #333;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -ms-flex-item-align: center;
+      align-self: center;
+  text-align: center;
 }
 /*# sourceMappingURL=index.css.map */
