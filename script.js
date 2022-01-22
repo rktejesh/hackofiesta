@@ -334,40 +334,60 @@ function themenamed6(){
 function pmd1(){
   let t=document.getElementsByClassName("prize-money")[0];
   t.style.display="initial";
+  let t1=document.getElementsByClassName("trophy")[0];
+  t1.style.opacity=1;
 }
 function pmdo1(){
   let t=document.getElementsByClassName("prize-money")[0];
   t.style.display="none";
+  let t1=document.getElementsByClassName("trophy")[0];
+  t1.style.opacity=0.3;
 }
 function pmd2(){
   let t=document.getElementsByClassName("prize-money")[1];
   t.style.display="initial";
+  let t1=document.getElementsByClassName("trophy")[1];
+  t1.style.opacity=1;
 }
 function pmdo2(){
   let t=document.getElementsByClassName("prize-money")[1];
   t.style.display="none";
+  let t1=document.getElementsByClassName("trophy")[1];
+  t1.style.opacity=0.3;
 }
 function pmd3(){
   let t=document.getElementsByClassName("prize-money")[2];
   t.style.display="initial";
+  let t1=document.getElementsByClassName("trophy")[2];
+  t1.style.opacity=1;
 }
 function pmdo3(){
   let t=document.getElementsByClassName("prize-money")[2];
   t.style.display="none";
+  let t1=document.getElementsByClassName("trophy")[2];
+  t1.style.opacity=0.3;
 }
 function pmd4(){
   let t=document.getElementsByClassName("prize-money")[3];
   t.style.display="initial";
+  let t1=document.getElementsByClassName("trophy")[3];
+  t1.style.opacity=1;
 }
 function pmdo4(){
   let t=document.getElementsByClassName("prize-money")[3];
   t.style.display="none";
+  let t1=document.getElementsByClassName("trophy")[3];
+  t1.style.opacity=0.3;
 }
 function pmd5(){
   let t=document.getElementsByClassName("prize-money")[4];
   t.style.display="initial";
+  let t1=document.getElementsByClassName("trophy")[4];
+  t1.style.opacity=1;
 }
 function pmdo5(){
   let t=document.getElementsByClassName("prize-money")[4];
   t.style.display="none";
+  let t1=document.getElementsByClassName("trophy")[4];
+  t1.style.opacity=0.3;
 }
