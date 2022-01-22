@@ -331,3 +331,43 @@ function themenamed6(){
   let t1=document.getElementById("th-innovation");
       t1.style.opacity="initial";
 }
+function pmd1(){
+  let t=document.getElementsByClassName("prize-money")[0];
+  t.style.display="initial";
+}
+function pmdo1(){
+  let t=document.getElementsByClassName("prize-money")[0];
+  t.style.display="none";
+}
+function pmd2(){
+  let t=document.getElementsByClassName("prize-money")[1];
+  t.style.display="initial";
+}
+function pmdo2(){
+  let t=document.getElementsByClassName("prize-money")[1];
+  t.style.display="none";
+}
+function pmd3(){
+  let t=document.getElementsByClassName("prize-money")[2];
+  t.style.display="initial";
+}
+function pmdo3(){
+  let t=document.getElementsByClassName("prize-money")[2];
+  t.style.display="none";
+}
+function pmd4(){
+  let t=document.getElementsByClassName("prize-money")[3];
+  t.style.display="initial";
+}
+function pmdo4(){
+  let t=document.getElementsByClassName("prize-money")[3];
+  t.style.display="none";
+}
+function pmd5(){
+  let t=document.getElementsByClassName("prize-money")[4];
+  t.style.display="initial";
+}
+function pmdo5(){
+  let t=document.getElementsByClassName("prize-money")[4];
+  t.style.display="none";
+}
