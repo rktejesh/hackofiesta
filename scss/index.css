@@ -1901,7 +1901,7 @@ h1 {
   color: white;
 }
 
-@media screen and (max-width: 449px) {
+@media screen and (min-width: 381px) and (max-width: 449px) {
   .user-card img {
     width: 75% !important;
   }
@@ -1929,6 +1929,40 @@ h1 {
   .speaker-name {
     position: relative;
     right: 12px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .user-card img {
+    width: 75% !important;
+  }
+  .card-speakers {
+    width: 360px;
+  }
+  .additional {
+    width: 130px !important;
+  }
+  .user-card {
+    width: 130px !important;
+  }
+  .card-speakers:hover .additional {
+    width: 100% !important;
+    border-radius: 0 5px 5px 0 !important;
+  }
+  .stats h1 {
+    margin-left: 12px !important;
+  }
+  .speaker-handles {
+    position: relative;
+    right: 14px;
+    margin-left: 0px !important;
+  }
+  .speaker-name {
+    position: relative;
+    right: 12px;
+  }
+  .speaker-content {
+    margin-left: 0px !important;
   }
 }
 /*# sourceMappingURL=index.css.map */
