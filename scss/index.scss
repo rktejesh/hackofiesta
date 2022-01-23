@@ -1210,4 +1210,17 @@ background-color:#3F3F3F;
   .user-card{
     width: 130px !important;
   }
+  .card-speakers:hover .additional {
+    width: 100% !important;
+    border-radius: 0 5px 5px 0 !important;
+  }
+  .stats h1{
+    margin-left: 12px !important;
+  }
+  .speaker-handles{
+    margin-left: 0px !important;
+  }
+  .speaker-name{
+    margin-right: 42px;
+  }
 }
