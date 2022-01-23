@@ -6,25 +6,10 @@
   font-family: "Ostrich-Sans";
   src: url("../font/ostrich-sans.sans-bold.ttf");
 }
+@import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
 body {
   overflow-x: hidden;
   font-family: "fleisch";
-}
-h1 {
-  color: white;
-  position: absolute;
-  font-size: 2.5em;
-  height: 1em;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 2;
-  margin: auto;
-  text-align: center;
-  opacity: 0;
-  animation: appear 4s forwards;
-  animation-iteration-count: infinite;
 }
 
 @keyframes appear {
@@ -729,7 +714,7 @@ h1 {
   font-size: 55px;
   padding-bottom: 8px;
   border-bottom: 3px solid #333;
-  margin-left: 125px;
+  margin-left: 110px;
   width: fit-content;
   margin-bottom: 30px;
 }
@@ -1106,4 +1091,109 @@ background-color:#3F3F3F;
 }
 .trophy{
   opacity: 0.3;
+}
+.speakers-card-main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.card-speakers {
+  width: 400px;
+  height: 200px;
+  background-color: #fff;
+  // background: linear-gradient(#f8f8f8, #fff);
+  background: #2a2b2f;
+  box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  margin: 1.5rem;
+}
+
+.card-speakers .additional {
+  position: absolute;
+  width: 150px;
+  height: 100%;
+  // background: linear-gradient(#dE685E, #EE786E);
+  background-color: #3F3F3F;
+  transition: width 0.4s;
+  overflow: hidden;
+  z-index: 2;
+}
+.card-speakers:hover .additional {
+  width: 100%;
+  border-radius: 0 5px 5px 0;
+}
+
+.card-speakers .additional .user-card {
+  width: 150px;
+  height: 100%;
+  position: relative;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-speakers .additional .user-card-speakers::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10%;
+  right: -2px;
+  height: 80%;
+  border-left: 2px solid rgba(0,0,0,0.025);
+}
+
+.card-speakers .additional .more-info {
+  width: 300px;
+  float: left;
+  position: absolute;
+  left: 150px;
+  height: 100%;
+}
+
+
+.card-speakers .additional .stats {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+.general{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 150px;
+}
+.speaker-name{
+  font-size: 1.35rem !important;
+  font-family: 'Assistant', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.speaker-content{
+  margin-left: 10px;
+  padding-right: 10px;
+  text-align: left;
+  color: white;
+  font-size: 13px;
+  font-style: normal;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.7px;
+  line-height: 1.4rem;
+  margin-top: 10px;
+}
+.speaker-handles{
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin-top: 40px;
+  margin-left: 35px;
+  color: white;
 }

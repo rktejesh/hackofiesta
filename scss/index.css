@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant&display=swap");
 @font-face {
   font-family: "fleisch";
   src: url("../font/Fleisch-Wolf.woff2") format("woff");
@@ -11,25 +12,6 @@
 body {
   overflow-x: hidden;
   font-family: "fleisch";
-}
-
-h1 {
-  color: white;
-  position: absolute;
-  font-size: 2.5em;
-  height: 1em;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 2;
-  margin: auto;
-  text-align: center;
-  opacity: 0;
-  -webkit-animation: appear 4s forwards;
-          animation: appear 4s forwards;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes appear {
@@ -1267,7 +1249,7 @@ h1 {
   font-size: 55px;
   padding-bottom: 8px;
   border-bottom: 3px solid #333;
-  margin-left: 125px;
+  margin-left: 110px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -1315,7 +1297,7 @@ h1 {
 }
 
 .about-content-sub {
-  width: 40%;
+  width: 42%;
 }
 
 @media screen and (min-width: 550px) and (max-width: 1099px) {
@@ -1780,5 +1762,142 @@ h1 {
 
 .trophy {
   opacity: 0.3;
+}
+
+.speakers-card-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.card-speakers {
+  width: 400px;
+  height: 200px;
+  background-color: #fff;
+  background: #2a2b2f;
+  -webkit-box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  margin: 1.5rem;
+}
+
+.card-speakers .additional {
+  position: absolute;
+  width: 150px;
+  height: 100%;
+  background-color: #3F3F3F;
+  -webkit-transition: width 0.4s;
+  transition: width 0.4s;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.card-speakers:hover .additional {
+  width: 100%;
+  border-radius: 0 5px 5px 0;
+}
+
+.card-speakers .additional .user-card {
+  width: 150px;
+  height: 100%;
+  position: relative;
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card-speakers .additional .user-card-speakers::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10%;
+  right: -2px;
+  height: 80%;
+  border-left: 2px solid rgba(0, 0, 0, 0.025);
+}
+
+.card-speakers .additional .more-info {
+  width: 300px;
+  float: left;
+  position: absolute;
+  left: 150px;
+  height: 100%;
+}
+
+.card-speakers .additional .stats {
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+}
+
+.general {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 150px;
+}
+
+.speaker-name {
+  font-size: 1.35rem !important;
+  font-family: 'Assistant', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.speaker-content {
+  margin-left: 10px;
+  padding-right: 10px;
+  text-align: left;
+  color: white;
+  font-size: 13px;
+  font-style: normal;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.7px;
+  line-height: 1.4rem;
+  margin-top: 10px;
+}
+
+.speaker-handles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 60%;
+  margin-top: 40px;
+  margin-left: 35px;
+  color: white;
 }
 /*# sourceMappingURL=index.css.map */
