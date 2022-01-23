@@ -1900,4 +1900,19 @@ h1 {
   margin-left: 35px;
   color: white;
 }
+
+@media screen and (max-width: 449px) {
+  .user-card img {
+    width: 75% !important;
+  }
+  .card-speakers {
+    width: 360px;
+  }
+  .additional {
+    width: 130px !important;
+  }
+  .user-card {
+    width: 130px !important;
+  }
+}
 /*# sourceMappingURL=index.css.map */
