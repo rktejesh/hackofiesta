@@ -1919,13 +1919,16 @@ h1 {
     border-radius: 0 5px 5px 0 !important;
   }
   .stats h1 {
-    margin-left: 12px !important;
+    margin-left: 20px !important;
   }
   .speaker-handles {
+    position: relative;
+    right: 3px;
     margin-left: 0px !important;
   }
   .speaker-name {
-    margin-right: 42px;
+    position: relative;
+    right: 12px;
   }
 }
 /*# sourceMappingURL=index.css.map */
