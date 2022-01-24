@@ -1,80 +1,513 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hackofiesta</title>
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./scss/index.css" />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+    crossorigin="anonymous"
+  />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Hackofiesta</title>
-  <link rel="stylesheet" href="./style.css">
-  <meta name="viewport" content="width=device-width" />
-  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="./scss/index.css">
+  <body>
+    <div class="overall">
+      <!-- partial:index.partial.html -->
+      <link
+        href="https://fonts.googleapis.com/css?family=Roboto+Mono"
+        rel="stylesheet"
+      />
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <svg
+        style="position: absolute; width: 0; height: 0"
+        width="0"
+        height="0"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        class="svg-sprite"
+      >
+        <defs>
+          <filter id="filter">
+            <feTurbulence
+              type="fractalNoise"
+              baseFrequency="0.000001 0.000001"
+              numOctaves="1"
+              result="warp"
+              seed="1"
+            ></feTurbulence>
+            <feDisplacementMap
+              xChannelSelector="R"
+              yChannelSelector="G"
+              scale="30"
+              in="SourceGraphic"
+              in2="warp"
+            ></feDisplacementMap>
+          </filter>
+        </defs>
+      </svg>
+      <div class="container-h">
+        <div class="glitch" data-text="Hackofiesta">Hackofiesta</div>
+        <div class="glow">Hackofiesta</div>
+        <p class="subtitle">v3.0</p>
+      </div>
+      <div class="scanlines"></div>
+      <div class="body-section">
+        <div class="date">8th-10th April, 2022</div>
+        <div class="half dark">
+          <div
+            class="btn btn-small btn-clear btn-light btn-glitch mrg-but1"
+            onclick="redirectreg()"
+          >
+            Register
+          </div>
+          <div
+            class="btn btn-small btn-clear btn-light btn-glitch mrg-but2"
+            onclick="redirectdis()"
+          >
+            Discord
+          </div>
+        </div>
+        <div class="countdown" data-date="10-4-2022" data-time="00:00">
+          <div class="day">
+            <span class="num"></span><span class="word"></span>
+          </div>
+          <div class="hour">
+            <span class="num"></span><span class="word"></span>
+          </div>
+          <div class="min">
+            <span class="num"></span><span class="word"></span>
+          </div>
+          <div class="sec">
+            <span class="num"></span><span class="word"></span>
+          </div>
+        </div>
+      </div>
+      <div class="square2"></div>
+      <div class="icon-container">
+        <i class="fa fa-facebook fa-2x icon" onclick="facebook()"></i>
+        <i class="fa fa-twitter fa-2x icon" onclick="twitter()"></i>
+        <i class="fa fa-instagram fa-2x icon" onclick="instagram()"></i>
+        <i
+          class="fa fa-linkedin fa-2x icon"
+          style="margin-right: 10px"
+          onclick="linkedin()"
+        ></i>
+      </div>
+      <div class="about">
+        <div class="about-sub">
+          <div class="about-heading">ABOUT</div>
+          <div class="about-content">
+            <div class="about-content-sub">
+              HackOFiesta v3.0 is a 36 hr annual Global Hackathon presented to you by IIIT Lucknow. Entrants can take part in a team of 1-5 adept individuals, using innovative technologies to hack a multitude of problems. Besides procuring a sense of contentment to the hackers, it also awards points to the contestants based on their ideas, execution, and presentation. 
+              <br />
+              <br />
+              <br />
+              The last edition of HackOFiesta experienced a staggering interaction of over 120k unique individuals from across the globe. This international platform will be an exquisite place for students to come together and contribute to our future by bringing forth their combined problem-solving abilities. With coverage from leading national newspapers to countless social media accounts, technical forums, and blogs, it is a massive opportunity for interaction with some of the brightest young minds of the world and its impact is truly endless.
+            </div>
+            <div class="ab-img">
+              <img src="./images/Image.png" style="width: 90%; height: auto" />
+            </div>
+          </div>
+        </div>
+        <div class="theme-sub" style="background-color: black">
+          <div
+            class="theme-heading"
+            style="
+              margin-bottom: 25px;
+              color: white;
+              border-bottom: 3px solid white;
+            "
+          >
+            THEME
+          </div>
+          <section class="main">
+            <div
+              class="wrap wrap--1"
+              onmouseenter="themename()"
+              onmouseleave="themenamed()"
+            >
+              <div class="container container--1">
+                <img
+                  src="./images/gameDev.png"
+                  alt="GameDev"
+                  style="width: 100%"
+                  id="th-gd"
+                />
 
-</head>
+                <div class="theme__item--details">
+                  <h4 class="theme-name">GAME DEVELOPMENT</h4>
+                </div>
+              </div>
+            </div>
 
-<body>
-  <div class="overall">
-    <!-- partial:index.partial.html -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-  
-    <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1"
-      xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-sprite">
-      <defs>
-        <filter id="filter">
-          <feTurbulence type="fractalNoise" baseFrequency="0.000001 0.000001" numOctaves="1" result="warp" seed="1">
-          </feTurbulence>
-          <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp">
-          </feDisplacementMap>
-        </filter>
-      </defs>
-    </svg>
-    <div class="container">
-      <div class="glitch" data-text="Hackofiesta">Hackofiesta</div>
-      <div class="glow">Hackofiesta</div>
-      <p class="subtitle">v3.0</p>
-    </div>
-    <div class="scanlines"></div>
-    <div class="body-section">
-      <div class="date">
-        8th-10th April, 2022
-      </div>
-      <div class="half dark">
-        <div class="btn btn-small btn-clear btn-light btn-glitch mrg-but1" onclick=redirectreg()>Register</div>
-        <div class="btn btn-small btn-clear btn-light btn-glitch mrg-but2" onclick=redirectdis()>Discord</div>
-      </div>
-    <div class="countdown" data-date="10-4-2022" data-time="00:00">
-      <div class="day"><span class="num"></span><span class="word"></span></div>
-      <div class="hour"><span class="num"></span><span class="word"></span></div>
-      <div class="min"><span class="num"></span><span class="word"></span></div>
-      <div class="sec"><span class="num"></span><span class="word"></span></div>
-    </div>
-    </div>
-    <div class="square2"></div>
-    <div class="icon-container">
-      <i class="fa fa-facebook fa-2x icon" onclick=facebook()></i>
-      <i class="fa fa-twitter fa-2x icon" onclick=twitter()></i>
-      <i class="fa fa-instagram fa-2x icon" onclick=instagram()></i>
-      <i class="fa fa-linkedin fa-2x icon" style="margin-right: 10px;" onclick=linkedin()></i>
-    </div>
-    <div class="about">
-      <div class="about-heading">
-      ABOUT
-      </div>
-      <div class="about-content">
-        Hack-o-Fiesta is an event organized by IIIT Lucknow, that lasts for 3 days and the students participate in a team of 1 to 5 like-minded individuals to utilize new technologies and hack together tons of code from different sources to achieve their goal. Not only do programmers get the satisfaction of creating a useful product during the hackathon, but once the time runs out all participants come together and present their creations to a panel of judges who then give points based on the idea, execution, and presentation.
-      </div>
-      <div class="about-content">
-        With over 1500 students from 110+ technical colleges all over the world, it is a glorious stage for sharing tech-related products and services among some of the best technical minds across the world, all with a common goal - to advance our technology to the NEXT LEVEL. With coverage from leading national newspapers to countless social media accounts, technical forums, and blogs, it is a massive opportunity for interaction with some of the brightest young minds of our country and its impact is truly endless.
-      </div>
-    </div>
-  </div>
-  
-  <!-- partial -->
-  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js'></script>
-  <script src="./script.js"></script>
-  <script src="script.js"></script>
-</body>
+            <div
+              class="wrap wrap--2"
+              onmouseenter="themename1()"
+              onmouseleave="themenamed1()"
+            >
+              <div class="container container--2">
+                <img
+                  src="./images/blockchain.png"
+                  alt="blockchain"
+                  style="width: 100%"
+                  id="th-bc"
+                />
+                <div class="theme__item--details">
+                  <h4 class="theme-name">BLOCK CHAIN</h4>
+                </div>
+              </div>
+            </div>
 
+            <div class="wrap wrap--3">
+              <div
+                class="container container--3"
+                onmouseenter="themename2()"
+                onmouseleave="themenamed2()"
+              >
+                <img
+                  src="./images/cloudcomputing.png"
+                  alt="cloudcomputing"
+                  style="width: 100%"
+                  id="th-cc"
+                />
+                <div class="theme__item--details">
+                  <h4 class="theme-name">CLOUD COMPUTING</h4>
+                </div>
+              </div>
+            </div>
+            <div class="wrap wrap--4">
+              <div
+                class="container container--4"
+                onmouseenter="themename3()"
+                onmouseleave="themenamed3()"
+              >
+                <img
+                  src="./images/AIML.png"
+                  alt="AIML"
+                  style="width: 100%"
+                  id="th-ai"
+                />
+                <div class="theme__item--details">
+                  <h4 class="theme-name">AI & ML</h4>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="main">
+            <div class="wrap wrap--5">
+              <div
+                class="container container--5"
+                onmouseenter="themename4()"
+                onmouseleave="themenamed4()"
+              >
+                <img
+                  src="./images/education.png"
+                  alt="education"
+                  style="width: 100%"
+                  id="th-education"
+                />
+                <div class="theme__item--details">
+                  <h4 class="theme-name">EDUCATION</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="wrap wrap--6">
+              <div
+                class="container container--6"
+                onmouseenter="themename5()"
+                onmouseleave="themenamed5()"
+              >
+                <img
+                  src="./images/healthcare.png"
+                  alt="healthcare"
+                  style="width: 100%"
+                  id="th-health"
+                />
+                <div class="theme__item--details">
+                  <h4 class="theme-name">HEALTH CARE</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="wrap wrap--7">
+              <div
+                class="container container--7"
+                onmouseenter="themename6()"
+                onmouseleave="themenamed6()"
+              >
+                <img
+                  src="./images/Innovation.png"
+                  alt="Innovation"
+                  style="width: 100%"
+                  id="th-innovation"
+                />
+                <div class="theme__item--details">
+                  <h4 class="theme-name">INNOVATION</h4>
+                </div>
+              </div>
+            </div>
+          </section>
+          <button
+            class="btn-clear btn-light btn-glitch theme-btn"
+            style="
+              align-self: center;
+              margin: 20px;
+              width: 280px;
+              padding: 15px;
+              padding-top: 20px;
+              padding-bottom: 20px;
+              margin-top: 45px;
+              cursor: pointer;
+            "
+          >
+            READ MORE ABOUT OUR THEME
+          </button>
+          <button
+            class="btn-clear btn-light btn-glitch theme-btn"
+            style="
+              align-self: center;
+              width: 280px;
+              padding: 15px;
+              padding-top: 18px;
+              padding-bottom: 18px;
+              margin: 15px;
+              cursor: pointer;
+            "
+          >
+            JUDGING CRITERIA
+          </button>
+        </div>
+        <div class="Prizes-heading" style="color: white">PRIZES</div>
+        <div class="prize-cards">
+          <div class="conteneur">
+            <div class="card">
+              <div class="boite" onmouseenter="pmd1()" onmouseleave="pmdo1()">
+                <div class="contenu">
+                  <img src="./images/trophy.png" style="width: 50%;height: auto;" class="trophy">
+                  <h4 class="theme-name">1st PRIZE</h4>
+                </div>
+              </div>
+            <h4 style="position: absolute; bottom: 0;left: 33%;font-style: normal;padding-bottom: 15px;display: none;" class="prize-money">&#8377 20000</h4>
+            </div>
+          </div>
+          <div class="conteneur">
+            <div class="card">
+              <div class="boite" onmouseenter="pmd2()" onmouseleave="pmdo2()">
+                <div class="contenu">
+                  <img src="./images/trophy.png" style="width: 50%;height: auto;" class="trophy">
+                  <h4 class="theme-name">2ND PRIZE</h4>
+                </div>
+              </div>
+              <h4 style="position: absolute; bottom: 0;left: 33%;font-style: normal;padding-bottom: 15px;display: none;" class="prize-money">&#8377 15000</h4>
+            </div>
+          </div>
+          <div class="conteneur">
+            <div class="card">
+              <div class="boite" onmouseenter="pmd3()" onmouseleave="pmdo3()">
+                <div class="contenu">
+                  <img src="./images/trophy.png" style="width: 50%;height: auto;" class="trophy">
+                  <h4 class="theme-name">3RD PRIZE</h4>
+                </div>
+              </div>
+              <h4 style="position: absolute; bottom: 0;left: 33%;font-style: normal;padding-bottom: 15px;display: none;" class="prize-money">&#8377 10000</h4>
+            </div>
+          </div>
+        </div>
+        <div class="prize-cards">
+          <div class="conteneur">
+            <div class="card">
+              <div class="boite" onmouseenter="pmd4()" onmouseleave="pmdo4()">
+                <div class="contenu">
+                  <img src="./images/trophy.png" style="width: 50%;height: auto;" class="trophy">
+                  <h4 class="theme-name">BEGINNERS TRACK</h4>
+                </div>
+              </div>
+              <h4 style="position: absolute; bottom: 0;left: 35%;font-style: normal;padding-bottom: 15px;display: none; transition: all 2s linear;" class="prize-money">&#8377 8000</h4>
+            </div>
+          </div>
+          <div class="conteneur">
+            <div class="card">
+              <div class="boite" onmouseenter="pmd5()" onmouseleave="pmdo5()">
+                <div class="contenu">
+                  <img src="./images/trophy.png" style="width: 50%;height: auto;" class="trophy">
+                  <h4 class="theme-name">ALL GIRLS TRACK</h4>
+                </div>
+              </div>
+              <h4 style="position: absolute; bottom: 0;left: 35%;font-style: normal;padding-bottom: 15px;display: none;" class="prize-money">&#8377 7000</h4>
+            </div>
+          </div>
+        </div>
+        <div class="Prizes-heading" style="color: white">SPEAKERS</div>
+        <div class="speakers-card-main" style="margin-bottom: 50px;">
+          <div class="card-speakers">
+            <div class="additional">
+              <div class="user-card">
+                <img src="./images/Logan.jpg" style="border-radius: 50%; height: auto; width: 80%;">
+              </div>
+              <div class="more-info">
+                <div class="stats">
+                  <h1 class="speaker-name" style="margin-left: 53px;">
+                    Logan Kilpatrick</h1>
+                  <div class="speaker-handles">
+                    <i class="fab fa-linkedin" style="font-size: 23px;"></i>
+                    <i class="fab fa-facebook-square" style="font-size: 23px;"></i>
+                    <i class="fab fa-instagram" style="font-size: 23px;"></i>
+                    <i class="fab fa-github-square" style="font-size: 23px;"></i>
+                  </div>
+                </div>
+                </div>
+              </div>
+              <div class="general">
+                <h1 class="speaker-name">
+                  Logan Kilpatrick</h1>
+                <div class="speaker-content">HackOFiesta v3.0 is a 36 hr annual Global Hackathon presented to you by IIIT Lucknow.</div>
+              </div>
+         </div>
+         <div class="card-speakers">
+          <div class="additional">
+            <div class="user-card">
+              <img src="./images/ganesh.jpg" style="border-radius: 50%; height: auto; width: 80%;">
+            </div>
+            <div class="more-info">
+              <div class="stats">
+                <h1 class="speaker-name" style="margin-left: 53px;">
+                  Logan Kilpatrick</h1>
+                <div class="speaker-handles">
+                  <i class="fab fa-linkedin" style="font-size: 23px;"></i>
+                  <i class="fab fa-facebook-square" style="font-size: 23px;"></i>
+                  <i class="fab fa-instagram" style="font-size: 23px;"></i>
+                  <i class="fab fa-github-square" style="font-size: 23px;"></i>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="general">
+              <h1 class="speaker-name">Logan Kilpatrick</h1>
+              <div class="speaker-content">HackOFiesta v3.0 is a 36 hr annual Global Hackathon presented to you by IIIT Lucknow.</div>
+            </div>
+       </div>
+       <div class="card-speakers">
+        <div class="additional">
+          <div class="user-card">
+            <img src="./images/harish.jpg" style="border-radius: 50%; height: auto; width: 80%;">
+          </div>
+          <div class="more-info">
+            <div class="stats">
+              <h1 class="speaker-name" style="margin-left: 53px;">
+                Logan Kilpatrick</h1>
+              <div class="speaker-handles">
+                <i class="fab fa-linkedin" style="font-size: 23px;"></i>
+                <i class="fab fa-facebook-square" style="font-size: 23px;"></i>
+                <i class="fab fa-instagram" style="font-size: 23px;"></i>
+                <i class="fab fa-github-square" style="font-size: 23px;"></i>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="general">
+            <h1 class="speaker-name">
+              Logan Kilpatrick</h1>
+            <div class="speaker-content">HackOFiesta v3.0 is a 36 hr annual Global Hackathon presented to you by IIIT Lucknow.</div>
+          </div>
+     </div>
+     <div class="card-speakers">
+      <div class="additional">
+        <div class="user-card">
+          <img src="./images/betina.jpg" style="border-radius: 50%; height: auto; width: 80%;">
+        </div>
+        <div class="more-info">
+          <div class="stats">
+            <h1 class="speaker-name" style="margin-left: 53px;">
+              Logan Kilpatrick</h1>
+            <div class="speaker-handles">
+              <i class="fab fa-linkedin" style="font-size: 23px;"></i>
+              <i class="fab fa-facebook-square" style="font-size: 23px;"></i>
+              <i class="fab fa-instagram" style="font-size: 23px;"></i>
+              <i class="fab fa-github-square" style="font-size: 23px;"></i>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="general">
+          <h1 class="speaker-name">
+            Logan Kilpatrick</h1>
+          <div class="speaker-content">HackOFiesta v3.0 is a 36 hr annual Global Hackathon presented to you by IIIT Lucknow.</div>
+        </div>
+   </div>
+   <div class="card-speakers">
+    <div class="additional">
+      <div class="user-card">
+        <img src="./images/mario.jpg" style="border-radius: 50%; height: auto; width: 80%;">
+      </div>
+      <div class="more-info">
+        <div class="stats">
+          <h1 class="speaker-name" style="margin-left: 53px;">
+            Logan Kilpatrick</h1>
+          <div class="speaker-handles">
+            <i class="fab fa-linkedin" style="font-size: 23px;"></i>
+            <i class="fab fa-facebook-square" style="font-size: 23px;"></i>
+            <i class="fab fa-instagram" style="font-size: 23px;"></i>
+            <i class="fab fa-github-square" style="font-size: 23px;"></i>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="general">
+        <h1 class="speaker-name">
+          Logan Kilpatrick</h1>
+        <div class="speaker-content">HackOFiesta v3.0 is a 36 hr annual Global Hackathon presented to you by IIIT Lucknow.</div>
+      </div>
+ </div>
+ <div class="card-speakers">
+  <div class="additional">
+    <div class="user-card">
+      <img src="./images/ben.jpg" style="border-radius: 50%; height: auto; width: 80%;">
+    </div>
+    <div class="more-info">
+      <div class="stats">
+        <h1 class="speaker-name" style="margin-left: 53px;">
+          Logan Kilpatrick</h1>
+        <div class="speaker-handles">
+          <i class="fab fa-linkedin" style="font-size: 23px;"></i>
+          <i class="fab fa-facebook-square" style="font-size: 23px;"></i>
+          <i class="fab fa-instagram" style="font-size: 23px;"></i>
+          <i class="fab fa-github-square" style="font-size: 23px;"></i>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="general">
+      <h1 class="speaker-name">
+        Logan Kilpatrick</h1>
+      <div class="speaker-content">HackOFiesta v3.0 is a 36 hr annual Global Hackathon presented to you by IIIT Lucknow.</div>
+    </div>
+</div>
+       </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- partial -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>

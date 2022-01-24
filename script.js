@@ -136,5 +136,261 @@ const redirectreg=()=>{
     window.open("./form.html","_blank")
 }
 const redirectdis=()=>{
-    window.open("https://discord.gg/gQxAH4YUkG","_blank")
+  window.open("https://discord.gg/gQxAH4YUkG","_blank")
+}
+
+class parallaxTiltEffect {
+
+    constructor({element, tiltEffect}) {
+  
+      this.element = element;
+      this.container = this.element.querySelector(".container");
+      this.size = [300, 360];
+      [this.w, this.h] = this.size;
+  
+      this.tiltEffect = tiltEffect;
+  
+      this.mouseOnComponent = false;
+  
+      this.handleMouseMove = this.handleMouseMove.bind(this);
+      this.handleMouseEnter = this.handleMouseEnter.bind(this);
+      this.handleMouseLeave = this.handleMouseLeave.bind(this);
+      this.defaultStates = this.defaultStates.bind(this);
+      this.setProperty = this.setProperty.bind(this);
+      this.init = this.init.bind(this);
+  
+      this.init();
+    }
+  
+    handleMouseMove(event) {
+      const {offsetX, offsetY} = event;
+  
+      let X;
+      let Y;
+  
+      if (this.tiltEffect === "reverse") {
+        X = ((offsetX - (this.w/2)) / 3) / 3;
+        Y = (-(offsetY - (this.h/2)) / 3) / 3;
+      }
+  
+      else if (this.tiltEffect === "normal") {
+        X = (-(offsetX - (this.w/2)) / 3) / 3;
+        Y = ((offsetY - (this.h/2)) / 3) / 3;
+      }
+  
+      this.setProperty('--rY', X.toFixed(2));
+      this.setProperty('--rX', Y.toFixed(2));
+  
+      this.setProperty('--bY', (80 - (X/4).toFixed(2)) + '%');
+      this.setProperty('--bX', (50 - (Y/4).toFixed(2)) + '%');
+    }
+  
+    handleMouseEnter() {
+      this.mouseOnComponent = true;
+      this.container.classList.add("container--active");
+    }
+  
+    handleMouseLeave() {
+      this.mouseOnComponent = false;
+      this.defaultStates();
+    }
+  
+    defaultStates() {
+      this.container.classList.remove("container--active");
+      this.setProperty('--rY', 0);
+      this.setProperty('--rX', 0);
+      this.setProperty('--bY', '80%');
+      this.setProperty('--bX', '50%');
+    }
+  
+    setProperty(p, v) {
+      return this.container.style.setProperty(p, v);
+    }
+  
+    init() {
+      this.element.addEventListener('mousemove', this.handleMouseMove);
+      this.element.addEventListener('mouseenter', this.handleMouseEnter);
+      this.element.addEventListener('mouseleave', this.handleMouseLeave);
+    }
+  
+  }
+  
+  const $hov = e => document.querySelector(e);
+  
+  const wrap1 = new parallaxTiltEffect({
+    element: $hov('.wrap--1'),
+    tiltEffect: 'reverse'
+  });
+  
+  const wrap2 = new parallaxTiltEffect({
+    element: $hov('.wrap--2'),
+    tiltEffect: 'normal'
+  });
+  
+  const wrap3 = new parallaxTiltEffect({
+    element: $hov('.wrap--3'),
+    tiltEffect: 'reverse'
+  });
+  const wrap4 = new parallaxTiltEffect({
+    element: $hov('.wrap--4'),
+    tiltEffect: 'reverse'
+  });
+  const wrap5 = new parallaxTiltEffect({
+    element: $hov('.wrap--5'),
+    tiltEffect: 'reverse'
+  });
+  const wrap6 = new parallaxTiltEffect({
+    element: $hov('.wrap--6'),
+    tiltEffect: 'reverse'
+  });
+  const wrap7 = new parallaxTiltEffect({
+    element: $hov('.wrap--7'),
+    tiltEffect: 'reverse'
+  });
+
+  function themename(){
+      let t=document.getElementsByClassName("theme__item--details")[0];
+      t.style.opacity="initial";
+      let t1=document.getElementById("th-gd");
+      t1.style.opacity="0.2";
+
+  }
+  function themenamed(){
+    let t=document.getElementsByClassName("theme__item--details")[0];
+    t.style.opacity=0;
+    let t1=document.getElementById("th-gd");
+      t1.style.opacity="initial";
+  }
+  function themename1(){
+    let t=document.getElementsByClassName("theme__item--details")[1];
+    t.style.opacity="initial";
+    let t1=document.getElementById("th-bc");
+      t1.style.opacity="0.2";
+  }
+function themenamed1(){
+  let t=document.getElementsByClassName("theme__item--details")[1];
+  t.style.opacity=0;
+  let t1=document.getElementById("th-bc");
+      t1.style.opacity="initial";
+}
+function themename2(){
+    let t=document.getElementsByClassName("theme__item--details")[2];
+    t.style.opacity="initial";
+    let t1=document.getElementById("th-cc");
+      t1.style.opacity="0.2";
+  }
+function themenamed2(){
+  let t=document.getElementsByClassName("theme__item--details")[2];
+  t.style.opacity=0;
+  let t1=document.getElementById("th-cc");
+      t1.style.opacity="initial";
+}
+function themename3(){
+    let t=document.getElementsByClassName("theme__item--details")[3];
+    t.style.opacity="initial";
+    let t1=document.getElementById("th-ai");
+      t1.style.opacity="0.2";
+  }
+function themenamed3(){
+  let t=document.getElementsByClassName("theme__item--details")[3];
+  t.style.opacity=0;
+  let t1=document.getElementById("th-ai");
+      t1.style.opacity="initial";
+}
+function themename4(){
+    let t=document.getElementsByClassName("theme__item--details")[4];
+    t.style.opacity="initial";
+    let t1=document.getElementById("th-education");
+      t1.style.opacity="0.2";
+      
+  }
+function themenamed4(){
+  let t=document.getElementsByClassName("theme__item--details")[4];
+  t.style.opacity=0;
+  let t1=document.getElementById("th-education");
+      t1.style.opacity="initial";
+}
+function themename5(){
+    let t=document.getElementsByClassName("theme__item--details")[5];
+    t.style.opacity="initial";
+    let t1=document.getElementById("th-health");
+      t1.style.opacity="0.2";
+  }
+function themenamed5(){
+  let t=document.getElementsByClassName("theme__item--details")[5];
+  t.style.opacity=0;
+  let t1=document.getElementById("th-health");
+      t1.style.opacity="initial";
+}
+function themename6(){
+    let t=document.getElementsByClassName("theme__item--details")[6];
+    t.style.opacity="initial";
+    let t1=document.getElementById("th-innovation");
+      t1.style.opacity="0.2";
+  }
+function themenamed6(){
+  let t=document.getElementsByClassName("theme__item--details")[6];
+  t.style.opacity=0;
+  let t1=document.getElementById("th-innovation");
+      t1.style.opacity="initial";
+}
+function pmd1(){
+  let t=document.getElementsByClassName("prize-money")[0];
+  t.style.display="initial";
+  let t1=document.getElementsByClassName("trophy")[0];
+  t1.style.opacity=1;
+}
+function pmdo1(){
+  let t=document.getElementsByClassName("prize-money")[0];
+  t.style.display="none";
+  let t1=document.getElementsByClassName("trophy")[0];
+  t1.style.opacity=0.3;
+}
+function pmd2(){
+  let t=document.getElementsByClassName("prize-money")[1];
+  t.style.display="initial";
+  let t1=document.getElementsByClassName("trophy")[1];
+  t1.style.opacity=1;
+}
+function pmdo2(){
+  let t=document.getElementsByClassName("prize-money")[1];
+  t.style.display="none";
+  let t1=document.getElementsByClassName("trophy")[1];
+  t1.style.opacity=0.3;
+}
+function pmd3(){
+  let t=document.getElementsByClassName("prize-money")[2];
+  t.style.display="initial";
+  let t1=document.getElementsByClassName("trophy")[2];
+  t1.style.opacity=1;
+}
+function pmdo3(){
+  let t=document.getElementsByClassName("prize-money")[2];
+  t.style.display="none";
+  let t1=document.getElementsByClassName("trophy")[2];
+  t1.style.opacity=0.3;
+}
+function pmd4(){
+  let t=document.getElementsByClassName("prize-money")[3];
+  t.style.display="initial";
+  let t1=document.getElementsByClassName("trophy")[3];
+  t1.style.opacity=1;
+}
+function pmdo4(){
+  let t=document.getElementsByClassName("prize-money")[3];
+  t.style.display="none";
+  let t1=document.getElementsByClassName("trophy")[3];
+  t1.style.opacity=0.3;
+}
+function pmd5(){
+  let t=document.getElementsByClassName("prize-money")[4];
+  t.style.display="initial";
+  let t1=document.getElementsByClassName("trophy")[4];
+  t1.style.opacity=1;
+}
+function pmdo5(){
+  let t=document.getElementsByClassName("prize-money")[4];
+  t.style.display="none";
+  let t1=document.getElementsByClassName("trophy")[4];
+  t1.style.opacity=0.3;
 }
