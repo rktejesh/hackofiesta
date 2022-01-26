@@ -1692,6 +1692,9 @@ h1 {
   letter-spacing: 1.5px;
   font-size: 50px;
   font-weight: 400;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-bottom: 8px;
   border-bottom: 3px solid white;
   width: -webkit-fit-content;
@@ -1715,7 +1718,7 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 90%;
+  margin-bottom: 50px;
 }
 
 .conteneur {
@@ -1738,9 +1741,10 @@ h1 {
   min-width: 300px;
   height: 220px;
   /*     box-shadow: inset 5px 5px 5px rgba(0,0,0,0.2), inset -5px -5px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0,0,0,0.3),-5px -5px 15px rgba(255,255,255,0.1); */
-  border-radius: 15px;
+  border-radius: 10px;
   margin: 30px;
-  background-color: #3F3F3F;
+  margin-top: 0px;
+  background-color: #C8C6C6;
 }
 
 .conteneur .card .boite {
@@ -1749,8 +1753,8 @@ h1 {
   left: 20px;
   right: 20px;
   bottom: 20px;
-  background: #2a2b2f;
-  border-radius: 15px;
+  background: #495464;
+  border-radius: 10px;
   /*     box-shadow: 0 20px 50px rgba(0,0,0,0.5); */
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -2081,8 +2085,8 @@ h1 {
 }
 
 .sponsor__card:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
 }
 
 .sponsor__card.noback img {
@@ -2195,6 +2199,7 @@ h1 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-right: 15px;
   }
   .sponsor__row2 {
     width: 90%;
@@ -2238,5 +2243,10 @@ h1 {
   .speakers-card-main {
     width: 70% !important;
   }
+}
+
+.prizes-main {
+  width: 100%;
+  background-color: #eeeeee;
 }
 /*# sourceMappingURL=index.css.map */
