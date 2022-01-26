@@ -1744,7 +1744,7 @@ h1 {
   border-radius: 2px;
   margin: 30px;
   margin-top: 0px;
-  background-color: #C8C6C6;
+  background-color: #c8c6c6e6;
 }
 
 .conteneur .card .boite {
@@ -1753,7 +1753,7 @@ h1 {
   left: 20px;
   right: 20px;
   bottom: 20px;
-  background: #495464;
+  background: #24282c;
   border-radius: 2px;
   /*     box-shadow: 0 20px 50px rgba(0,0,0,0.5); */
   -webkit-transition: 0.5s;
@@ -1830,6 +1830,8 @@ h1 {
   width: 400px;
   height: 200px;
   background-color: #fff;
+  -webkit-filter: grayscale(1) !important;
+          filter: grayscale(1) !important;
   background: #2a2b2f;
   -webkit-box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
           box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
