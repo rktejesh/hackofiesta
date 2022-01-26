@@ -937,7 +937,7 @@ h1 {
   align-items: center;
   // background: rgba(255, 255, 255, 0.25);
   background-color: #3F3F3F;
-  border-radius: 10px;
+  border-radius: 2px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 .container p {
@@ -1066,7 +1066,7 @@ h1 {
   min-width: 300px;
   height: 220px;
 /*     box-shadow: inset 5px 5px 5px rgba(0,0,0,0.2), inset -5px -5px 15px rgba(255,255,255,0.1), 5px 5px 15px rgba(0,0,0,0.3),-5px -5px 15px rgba(255,255,255,0.1); */
-  border-radius: 10px;
+  border-radius: 2px;
   margin: 30px;
   margin-top: 0px;
 background-color:#C8C6C6;
@@ -1079,7 +1079,7 @@ background-color:#C8C6C6;
   right: 20px;
   bottom: 20px;
   background: #495464;
-  border-radius: 10px;
+  border-radius: 2px;
 /*     box-shadow: 0 20px 50px rgba(0,0,0,0.5); */
   transition: 0.5s;
   display: flex;
@@ -1134,7 +1134,7 @@ background-color:#C8C6C6;
   // background: linear-gradient(#f8f8f8, #fff);
   background: #2a2b2f;
   box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
-  border-radius: 6px;
+  border-radius: 2px;
   overflow: hidden;
   position: relative;
   margin: 1.5rem;
@@ -1153,7 +1153,7 @@ background-color:#C8C6C6;
 }
 .card-speakers:hover .additional {
   width: 100%;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 2px 2px 0;
 }
 
 .card-speakers .additional .user-card {
@@ -1243,7 +1243,7 @@ background-color:#C8C6C6;
   }
   .card-speakers:hover .additional {
     width: 100% !important;
-    border-radius: 0 5px 5px 0 !important;
+    border-radius: 0 2px 2px 0 !important;
   }
   .stats h1{
     margin-left: 20px !important;
@@ -1273,7 +1273,7 @@ background-color:#C8C6C6;
   }
   .card-speakers:hover .additional {
     width: 100% !important;
-    border-radius: 0 5px 5px 0 !important;
+    border-radius: 0 2px 2px 0 !important;
   }
   .stats h1{
     margin-left: 12px !important;
@@ -1327,7 +1327,7 @@ background-color:#C8C6C6;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
+  border-radius: 2px;
   transition: all 0.3s linear;
 }
 .sponsor__card:hover{
@@ -1336,7 +1336,7 @@ background-color:#C8C6C6;
 
 .sponsor__card.noback img{
   width: 10rem !important;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 .sponsor__card.noback{
   background-color: transparent;
@@ -1356,6 +1356,7 @@ background-color:#C8C6C6;
   font-weight: 900;
   font-size: 2rem;
   text-transform: uppercase;
+  letter-spacing: 0.15rem;
   color: #fff;
   font-style: normal;
   font-family: 'Ostrich-Sans';
@@ -1430,7 +1431,7 @@ background-color:#C8C6C6;
     height: 6rem;
     width: 18rem;
     padding: 0 0.3rem;
-    border-radius: 5px;
+    border-radius: 2px;
   }
   .sponsor__card img{
     width: 13rem;
@@ -1451,9 +1452,6 @@ background-color:#C8C6C6;
   .sponsor__card.noback img{
     width: 6rem !important;
     height: 5rem !important;
-  }
-  .tier-heading__small{
-    font-size: 1.2rem;
   }
   .sponsor__heading h1{
     font-size: 2.5rem;
