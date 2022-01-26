@@ -1242,7 +1242,7 @@ h1 {
 }
 
 .about-heading {
-  margin-top: 50px;
+  margin-top: 80px;
   font-family: "Ostrich-Sans";
   font-style: normal;
   letter-spacing: 1.5px;
@@ -1262,9 +1262,9 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -1295,6 +1295,8 @@ h1 {
 
 .about-content-sub {
   width: 42%;
+  font-size: 1.1em;
+  margin-bottom: 50px;
 }
 
 @media screen and (min-width: 550px) and (max-width: 1099px) {
@@ -2054,7 +2056,6 @@ h1 {
       flex-wrap: wrap;
   gap: 1rem;
   width: 80%;
-  padding-bottom: 1.2rem;
 }
 
 .sponsor__card {
@@ -2103,29 +2104,33 @@ h1 {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-bottom: 1.2rem;
 }
 
 .tier-heading__small {
   margin: 1rem;
   text-align: center;
   display: block;
-  font-size: 1.9rem;
   font-weight: 900;
-  letter-spacing: 0.2rem;
+  font-size: 2rem;
   text-transform: uppercase;
   color: #fff;
   font-style: normal;
+  font-family: 'Ostrich-Sans';
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .tier-heading {
   margin: 2rem;
   display: block;
   text-align: center;
-  font-size: 1.9rem;
   font-weight: 900;
+  letter-spacing: 0.15rem;
+  font-size: 2rem;
+  font-family: 'Ostrich-Sans';
   line-height: 0;
-  letter-spacing: 0.4rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
   text-transform: uppercase;
   color: #fff;
   font-style: normal;
@@ -2141,6 +2146,15 @@ h1 {
   letter-spacing: .2rem;
   font-style: normal;
   color: #fff;
+  margin-bottom: 40px;
+}
+
+.heading-secondary--white {
+  font-family: 'Ostrich-Sans';
+  padding-bottom: 5px;
+  margin-top: 50px;
+  margin-bottom: 80px  !important;
+  border-bottom: 3px solid white;
 }
 
 @media screen and (min-width: 800px) and (max-width: 1145px) {
@@ -2204,6 +2218,12 @@ h1 {
   }
   .sponsor__heading h1 {
     font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  .speakers-card-main {
+    width: 70% !important;
   }
 }
 /*# sourceMappingURL=index.css.map */
