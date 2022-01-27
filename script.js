@@ -56,10 +56,10 @@ $('.btn-glitch')
     });
 
     function linkedin(){
-        window.open("https://www.linkedin.com/company/hackofiesta-iiitl/", "_blank")
+        window.open("https://www.linkedin.com/company/hackofiesta-iiitl", "_blank")
     }
     function instagram(){
-        window.open("https://www.instagram.com/hackofiesta_iiitl/", "_blank")
+        window.open("https://www.instagram.com/hackofiesta", "_blank")
     }
     function twitter(){
         window.open("https://twitter.com/hof_iiitl", "_blank")
@@ -137,6 +137,9 @@ const redirectreg=()=>{
 }
 const redirectdis=()=>{
   window.open("https://discord.gg/gQxAH4YUkG","_blank")
+}
+const redirectbro=()=>{
+  window.open("https://drive.google.com/file/d/1ZPpGbLeGDBcONBVLzcOxdmcPAu6IaVNd/view","_blank")
 }
 
 class parallaxTiltEffect {
