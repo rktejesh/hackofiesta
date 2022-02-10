@@ -412,3 +412,21 @@ function toggleAccordion() {
 }
 
 items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+$(".list").click(function () {
+  const value = $(this).attr("data-filter");
+  if (value == "all") {
+    $(".team-card").fadeIn(400);
+    $("li.list.active").removeClass("active");
+    $(this).addClass("active");
+  } else {
+    $("li.list.active").removeClass("active");
+    $(this).addClass("active");
+    $(".team-card")
+      .not("." + value)
+      .fadeOut(400);
+    $(".team-card")
+      .filter("." + value)
+      .fadeIn(400);
+  }
+});
