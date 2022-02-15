@@ -1610,11 +1610,13 @@ $steps: 20;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 .site-footer hr
 {
-  border-top-color:#bbb;
-  opacity:0.5
+  background-color: #737373;
+  opacity:0.5;
+  border: 0.75px solid #737373;
 }
 .site-footer hr.small
 {
@@ -2232,4 +2234,65 @@ section#team-main {
 #team-container p {
   font-size: 15px;
   text-align: center;
+}
+.hack-f{
+  font-size: 25px;
+}
+.footer-location{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.footer-location-sub{
+display: flex;
+margin-right: 20px;
+}
+.footer-location-sub i{
+  align-self: center;
+  margin-right: 10px;
+  font-size: 15px;
+}
+.campus{
+  width:80%;
+  display: flex;
+  flex-direction: column;
+}
+.campus-imgs{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.campus-imgs-sub{
+  margin-top: 30px;
+  width:15%;
+}
+.campus-imgs-sub img{
+    filter: grayscale(0.3);
+}
+@media screen and (min-width:500px) and (max-width:900px) {
+  .campus-imgs-sub{
+    margin-top: 30px;
+    width:30%
+  }
+}
+@media screen and (max-width:500px) {
+  .campus-imgs-sub{
+    margin-top: 30px;
+    width:47%;
+  }
+  .hack-f{
+    text-align: center;
+  }
+  .footer-location{
+    flex-direction: column;
+    align-items: center;
+    }
+    .footer-location-sub{
+      margin: 0px!important;
+      margin-bottom: 15px !important;
+    }
 }
