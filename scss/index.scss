@@ -1674,7 +1674,7 @@ $steps: 20;
   margin-left:6px;
   margin-right:0;
   border-radius:100%;
-  background-color:#33353d
+  background-color:#33353d;
 }
 .copyright-text
 {
@@ -2076,6 +2076,7 @@ $blue:black;
   flex-direction: column;
   justify-content: center;
   align-items:center;
+  padding-bottom: 50px;
 }
 .team-accordions {
   margin-top: 2.5em;
@@ -2296,4 +2297,10 @@ margin-right: 20px;
       margin: 0px!important;
       margin-bottom: 15px !important;
     }
+}
+.footer-lko{
+  text-decoration: none;
+}
+.footer-lko:hover{
+ color: rgb(184, 182, 182) !important;
 }
