@@ -2284,6 +2284,7 @@ margin-right: 20px;
 .campus-imgs-sub{
   margin-top: 30px;
   width:15%;
+  transition: all 0.3s linear;
 }
 .campus-imgs-sub img{
     filter: grayscale(0.3);
@@ -2316,4 +2317,7 @@ margin-right: 20px;
 }
 .footer-lko:hover{
  color: rgb(184, 182, 182) !important;
+}
+.campus-imgs-sub:hover{
+  transform: scale(1.15);
 }
