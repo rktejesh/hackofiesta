@@ -398,7 +398,6 @@ body {
   font-family: "Roboto mono", sans-serif;
   font-weight: 700;
   border: 1px solid #121212;
-  padding: 16px;
   line-height: 1.5;
   font-size: em(40px);
   width: 100%;
@@ -2317,14 +2316,4 @@ margin-right: 20px;
 }
 .footer-lko:hover{
  color: rgb(184, 182, 182) !important;
-}
-.devfolio-button-iframe{
-  height: 58px !important;
-  width: 300px !important;
-  overflow: hidden !important;
-}
-#apply-button{
-  height: 58px !important;
-  width: 300px !important;
-  overflow: hidden !important;
 }
