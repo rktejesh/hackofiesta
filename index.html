@@ -42,8 +42,14 @@
         <div class="btn btn-small btn-clear btn-light btn-glitch mrg-but1" onclick="redirectreg()">
           Register
         </div>
-        <div class="btn btn-small btn-clear btn-light btn-glitch mrg-but2" onclick="redirectdis()">
+        <!-- <div class="btn btn-small btn-clear btn-light btn-glitch mrg-but2" onclick="redirectdis()">
           Discord
+        </div> -->
+        <div 
+        class="apply-button" 
+        data-hackathon-slug="hackofiesta2022" 
+        data-button-theme="dark"
+        style="height: 44px; width: 312px">
         </div>
       </div>
       <div class="countdown" data-date="10-4-2022" data-time="00:00">
@@ -66,6 +72,7 @@
       <i class="fa fa-facebook fa-2x icon" onclick="facebook()"></i>
       <i class="fa fa-twitter fa-2x icon" onclick="twitter()"></i>
       <i class="fa fa-instagram fa-2x icon" onclick="instagram()"></i>
+      <img src="./img/icons/discord.png" class="icon" style="width:90px ;">
       <i class="fa fa-linkedin fa-2x icon" style="margin-right: 10px" onclick="linkedin()"></i>
     </div>
     <div class="about">
@@ -597,7 +604,7 @@
         <!-- <div class="scanlines"></div> -->
         <div class="sponsor__heading" data-aos="fade-down">
           <h1 class="heading-secondary heading-secondary--white glitch2" style='font-size: 4em;'
-            data-glitch2="Past Sponsors">Sponsors</h1>
+            data-glitch2="Sponsors">Sponsors</h1>
         </div>
         <h2 class="tier-heading" data-aos="fade-up">Patron</h2>
         <div class="sponsor__row" >
@@ -1289,6 +1296,7 @@
 
 
   <!-- partial -->
+  <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script>
   <script src="./script.js"></script>
