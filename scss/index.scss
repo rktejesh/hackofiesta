@@ -14,6 +14,7 @@ body {
   overflow-x: hidden;
   font-family: "fleisch";
 }
+@import url('https://fonts.googleapis.com/css2?family=Assistant&family=Nunito+Sans:wght@600&display=swap');
 
 @keyframes appear {
   0% {
@@ -433,25 +434,31 @@ body {
 }
 
 .btn-clear {
-  background-color: transparent;
+  background-color: white;
+  color: #27333f;
+  font-style: normal;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  white-space: nowrap;
 }
-.btn-clear:hover {
-  background-color: #121212;
-  color: #fff;
-}
-.btn-clear.btn-light {
-  border-color: #fff;
-  color: #fff;
-}
-.btn-clear.btn-light:hover {
-  color: #121212;
-  background-color: #fff;
-}
+// .btn-clear:hover {
+//   background-color: #121212;
+//   color: #fff;
+// }
+// .btn-clear.btn-light {
+//   border-color: #fff;
+//   color: #fff;
+// }
+// .btn-clear.btn-light:hover {
+//   color: #121212;
+//   background-color: #fff;
+// }
 
-.btn-light:hover {
-  background-color: #121212;
-  color: #fff;
-}
+// .btn-light:hover {
+//   background-color: #121212;
+//   color: #fff;
+// }
 
 .btn-dark {
   background-color: #121212;
