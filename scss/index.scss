@@ -2191,7 +2191,7 @@ section#team-main {
   box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: bottom 0.5s;
-  transition-delay: 0.65s;
+  transition-delay: 0s;
   border-bottom-left-radius: 50%;
 }
 #team-main .team-container .team-card:hover .team-content {
@@ -2207,8 +2207,8 @@ section#team-main {
   text-align: center;
   margin: 15px 0 15px;
   line-height: 1.1em;
-  transition: 0.5s;
-  transition-delay: 0.6s;
+  transition: 0s;
+  // transition-delay: 0.6s;
   opacity: 0;
   transform: translateY(-20px);
 }
@@ -2235,9 +2235,9 @@ section#team-main {
   list-style: none;
   margin: 0 10px;
   transform: translateY(40px);
-  transition: 0.5s;
+  transition: 0s;
   opacity: 0;
-  transition-delay: calc(0.2s * var(--i));
+  // transition-delay: calc(0.2s * var(--i));
 }
 #team-main .team-container .team-card:hover .team-content .sci li {
   transform: translateY(0);
