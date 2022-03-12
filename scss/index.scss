@@ -44,6 +44,7 @@ body {
   font-size: 10vw;
   animation: glitch 5s 5s infinite;
   font-family: "fleisch";
+  letter-spacing: 0.5rem;
 }
 
 .glitch::before,
@@ -53,7 +54,6 @@ body {
   left: -2px;
   text-shadow: -5px 0 magenta;
   background: black;
-  overflow: hidden;
   top: 0;
   animation: noise-1 3s linear infinite alternate-reverse,
     glitch 5s 5.05s infinite;
@@ -66,7 +66,6 @@ body {
   left: 2px;
   text-shadow: -5px 0 lightgreen;
   background: black;
-  overflow: hidden;
   top: 0;
   animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
 }
@@ -324,14 +323,17 @@ body {
 }
 
 .subtitle {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 300;
+  font-family: fleisch;
+  font-weight: 800;
   font-size: 1.8vw;
   color: #fff;
+  position: relative;
   text-transform: uppercase;
   letter-spacing: 0.5em;
   text-align: right;
-  left: 17%;
+  right: -80px;
+  top: 40px;
+  z-index: 10;
   animation: glitch-2 5s 5.02s infinite;
 }
 
@@ -605,6 +607,7 @@ body {
   font-family: "fleisch";
   margin-bottom: 35px;
   font-size: 1.4vw;
+  letter-spacing: 0.1rem;
 }
 .btn-container {
   width: 100%;
@@ -1070,14 +1073,6 @@ h1 {
   .about-content {
     width: 90%;
   }
-  .container-h {
-    overflow: hidden;
-  }
-}
-@media screen and (min-width: 601px) and (max-width: 1800px) {
-  .container-h {
-    overflow: hidden;
-  }
 }
 .Prizes-heading{
   background-color: black;
@@ -1178,7 +1173,7 @@ background-color:#c8c6c6e6;
 }
 .card-speakers {
   width: 400px;
-  height: 200px;
+  height: 150px;
   background-color: #fff;
   // filter: grayscale(1) !important;
   // background: linear-gradient(#f8f8f8, #fff);
@@ -1207,7 +1202,7 @@ background-color:#c8c6c6e6;
 }
 
 .card-speakers .additional .user-card {
-  width: 150px;
+  width: 140px;
   height: 100%;
   position: relative;
   float: left;
@@ -1227,10 +1222,10 @@ background-color:#c8c6c6e6;
 }
 
 .card-speakers .additional .more-info {
-  width: 300px;
+  width: 250px;
   float: left;
   position: absolute;
-  left: 150px;
+  left: 130px;
   height: 100%;
 }
 
@@ -1244,22 +1239,25 @@ background-color:#c8c6c6e6;
 }
 .general{
   display: flex;
+  width: 50%;
+  height: 100%;
   flex-direction: column;
   align-items: center;
   margin-left: 150px;
 }
 .speaker-name{
-  font-size: 1.35rem !important;
+  font-size: 1.15rem !important;
   font-family: 'Assistant', sans-serif;
   font-weight: 500;
   font-style: normal;
   color: white;
+  width: 150px;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 .speaker-content{
   margin-left: 10px;
-  padding-right: 10px;
+  padding-right: 15px;
   text-align: center;
   width: 100%;
   color: white;
@@ -1269,8 +1267,8 @@ background-color:#c8c6c6e6;
   font-weight: 300;
   letter-spacing: 0.7px;
   align-self: flex-start;
-  line-height: 1.4rem;
-  margin-top: 10px;
+  line-height: 1.2rem;
+  margin-top: 7px;
 }
 .speaker-handles{
   display: flex;
@@ -2150,8 +2148,8 @@ section#team-main {
 }
 #team-main .team-container .team-card {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 165px;
+  height: 165px;
   margin: 10px;
   overflow: hidden;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
