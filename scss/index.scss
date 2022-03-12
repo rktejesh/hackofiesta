@@ -1256,9 +1256,7 @@ background-color:#c8c6c6e6;
   margin-bottom: 10px;
 }
 .speaker-content{
-  margin-left: 10px;
   padding-right: 15px;
-  text-align: center;
   width: 100%;
   color: white;
   font-size: 13px;
@@ -1268,7 +1266,7 @@ background-color:#c8c6c6e6;
   letter-spacing: 0.7px;
   align-self: flex-start;
   line-height: 1.2rem;
-  margin-top: 7px;
+  margin-bottom: 10px;
 }
 .speaker-handles{
   display: flex;
@@ -2341,4 +2339,31 @@ margin-right: 20px;
 }
 .campus-imgs-sub:hover{
   transform: scale(1.15);
+}
+
+.card-speaker{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 400px;
+  height: 150px;
+}
+.user-img{
+  width: 140px;
+  height: 100%;
+  position: relative;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stat{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.fa-linkedin:hover{
+  transform: scale(1.05);
 }
