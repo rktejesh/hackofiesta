@@ -2536,15 +2536,31 @@ margin-right: 20px;
 .prize-cards{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 80%;
+  flex-wrap: wrap;
 }
 .prizecard-2{
-  width: 28%;
+  width: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-style: normal;
+}
+@media screen and (max-width:1350px) {
+  .prize-cards{
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media screen and (max-width:400px) {
+  .prizecard-2{
+    width: 300px;
+  }
+  .prize-cards{
+    width: 100%;
+  }
 }
 .prize-card-sub{
   width: 100%;
