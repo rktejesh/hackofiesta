@@ -1298,70 +1298,68 @@ background-color:#c8c6c6e6;
   margin-left: 35px;
   color: white;
 }
-@media screen and (min-width:381px) and (max-width:449px) {
-  .user-card img{
-    width: 75% !important;
-  }
-  .card-speakers{
-    width: 360px;
-  }
-  .additional{
-    width: 130px !important;
-  }
-  .user-card{
-    width: 130px !important;
-  }
-  .card-speakers:hover .additional {
-    width: 100% !important;
-    border-radius: 0 2px 2px 0 !important;
-  }
-  .stats h1{
-    margin-left: 20px !important;
-  }
-  .speaker-handles{
-    position: relative;
-    right: 3px;
-    margin-left: 0px !important;
-  }
-  .speaker-name{
-    position: relative;
-    right: 12px;
-  }
-}
-@media screen and (max-width:380px) {
-  .user-card img{
-    width: 75% !important;
-  }
-  .card-speakers{
-    width: 360px;
-  }
-  .additional{
-    width: 130px !important;
-  }
-  .user-card{
-    width: 130px !important;
-  }
-  .card-speakers:hover .additional {
-    width: 100% !important;
-    border-radius: 0 2px 2px 0 !important;
-  }
-  .stats h1{
-    margin-left: 12px !important;
-  }
-  .speaker-handles{
-    position: relative;
-    right: 16px;
-    margin-left: 0px !important;
-  }
-  .speaker-name{
-    position: relative;
-    right: 12px;
-  }
-  .speaker-content{
-    margin-left: 0px !important;
-  }
+// @media screen and (min-width:381px) and (max-width:449px) {
+//   .user-card img{
+//     width: 75% !important;
+//   }
+//   .card-speakers{
+//     width: 360px;
+//   }
+//   .additional{
+//     width: 130px !important;
+//   }
+//   .user-card{
+//     width: 130px !important;
+//   }
+//   .card-speakers:hover .additional {
+//     width: 100% !important;
+//     border-radius: 0 2px 2px 0 !important;
+//   }
+//   .stats h1{
+//     margin-left: 20px !important;
+//   }
+//   .speaker-handles{
+//     position: relative;
+//     right: 3px;
+//     margin-left: 0px !important;
+//   }
+//   .user-img{
+//     width: 120px !important;
+//   }
+// }
+// @media screen and (max-width:380px) {
+//   .user-card img{
+//     width: 75% !important;
+//   }
+//   .card-speakers{
+//     width: 360px;
+//   }
+//   .additional{
+//     width: 130px !important;
+//   }
+//   .user-card{
+//     width: 130px !important;
+//   }
+//   .card-speakers:hover .additional {
+//     width: 100% !important;
+//     border-radius: 0 2px 2px 0 !important;
+//   }
+//   .stats h1{
+//     margin-left: 12px !important;
+//   }
+//   .speaker-handles{
+//     position: relative;
+//     right: 16px;
+//     margin-left: 0px !important;
+//   }
+//   .speaker-content{
+//     margin-left: 0px !important;
+//   }
 
-}
+//   .user-img{
+//     width: 120px !important;
+//   }
+// }
 
 @media screen and (max-width:450px){
   .conteneur .card{
@@ -2375,7 +2373,7 @@ margin-right: 20px;
   height: 150px;
 }
 .user-img{
-  width: 140px;
+  max-width: 140px;
   height: 100%;
   position: relative;
   float: left;
