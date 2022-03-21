@@ -2712,7 +2712,6 @@ $bp-lg: 800px;
   line-height: 1.35;
 }
 
-@media (hover: hover) {
   .card-pr:after {
     transform: translateY(0);
   }
@@ -2755,4 +2754,3 @@ $bp-lg: 800px;
       transition-duration: 0s;
     }
   }
-}
