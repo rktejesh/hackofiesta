@@ -2758,5 +2758,35 @@ $bp-lg: 800px;
   .faq-animation{
     position: absolute;
     left: 15%;
-    padding-bottom: 100px;
   }
+ @media screen and (min-width:901px) and (max-width:1150px) {
+  .faq-animation{
+    position: absolute;
+    left: 5%;
+  }
+ }
+ @media screen and (min-width:800px) and (max-width:900px) {
+  .faq-animation{
+    position: absolute;
+    left: 0%;
+  }
+ }
+ @media screen and(min-width:450px) and (max-width:800px) {
+  .faq-animation{
+    position: relative;
+    left: 0%;
+  }
+  .Prizes-heading{
+    margin-top: 0px;
+  }
+ }
+ @media screen and (max-width:450px) {
+  .faq-animation{
+    position: relative;
+    display: flex;
+    width: 200px;
+  }
+  .Prizes-heading{
+    margin-top: 0px;
+  }
+ }
