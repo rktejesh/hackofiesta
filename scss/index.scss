@@ -1868,6 +1868,7 @@ $blue:black;
   width: 48rem;
   font-family:"Open Sans", Helvetica, Arial, sans-serif;
   margin-bottom: 80px;
+  background-color: white;
 }
 
 .accordion {
@@ -2753,4 +2754,9 @@ $bp-lg: 800px;
     .content > *:not(.title) {
       transition-duration: 0s;
     }
+  }
+  .faq-animation{
+    position: absolute;
+    left: 15%;
+    padding-bottom: 100px;
   }
