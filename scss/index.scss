@@ -1558,7 +1558,7 @@ background-color:#c8c6c6e6;
 }
 .prizes-main{
   width: 100%;
-  background-color: #eeeeee;
+  background-color: #000;
   display:flex ;
   flex-direction: column;
   justify-content: center;
@@ -2548,6 +2548,7 @@ margin-right: 20px;
   justify-content: center;
   align-items: center;
   font-style: normal;
+  margin-bottom: 20px;
 }
 @media screen and (max-width:1350px) {
   .prize-cards{
@@ -2611,7 +2612,7 @@ $bp-lg: 800px;
 .page-content-pr {
   display: grid;
   grid-gap: 1rem;
-  padding: 1rem;
+  // padding: 1rem;
   background-color: #EEEEEE;
   max-width: 1024px;
   margin: 0 auto;
@@ -2631,7 +2632,7 @@ $bp-lg: 800px;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
-  padding: 1rem;
+  // padding: 1rem;
   background-color: #EEEEEE;
   width: 100%;
   text-align: center;
@@ -2823,9 +2824,8 @@ $bp-lg: 800px;
 
 .t-card {
   width: 220px;
-  height: 321px;
+  height: 220px;
   background: #fff;
-  border-radius: 10px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -2903,7 +2903,7 @@ $bp-lg: 800px;
 }
 
 .t-circle svg {
-  z-index: 10000;
+  z-index: 10;
   transform: translateZ(0);
 }
 
@@ -2913,7 +2913,7 @@ $bp-lg: 800px;
   height: 118px;
   border-radius: 50%;
   background: var(--bg-color);
-  top: 70px;
+  top: 30px;
   left: 50px;
   z-index: 0;
   transition: transform 0.3s ease-out;
